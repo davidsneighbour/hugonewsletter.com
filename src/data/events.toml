@@ -1,0 +1,143 @@
+[[events]]
+type       = "meetup"
+name       = "Continuous Integration and Deployment For Documentation"
+start_date = 2017-02-27T18:30:00-05:00
+end_date   = 2017-02-27T19:45:00-05:00
+location   = "New York, NY"
+link       = "https://www.meetup.com/WriteTheDocsNYC/events/237540081/"
+
+[[events]]
+type       = "meetup"
+name       = "Charting the English Language, in Pure Clojure"
+start_date = 2016-11-16T00:00:00Z
+end_date   = 2016-11-16T00:00:00Z
+location   = "Philadelphia, PA"
+link       = "https://www.meetup.com/Clojadelphia/events/235472275/"
+
+[[events]]
+type       = "meetup"
+name       = "The Changing Face of DevOps"
+start_date = 2016-11-15T00:00:00Z
+end_date   = 2016-11-15T00:00:00Z
+location   = "New York, NY"
+link       = "https://www.eventbrite.com/e/the-changing-face-of-devops-breakfast-roundtable-tickets-28895715864"
+
+[[events]]
+type       = "meetup"
+name       = "Unikernels – What Are They Good For?"
+start_date = 2016-06-15T00:00:00Z
+end_date   = 2016-06-15T00:00:00Z
+location   = "New York, NY"
+link       = "http://www.meetup.com/nylug-meetings/events/231555330/"
+
+[[events]]
+type       = "meetup"
+name       = "Kubernetes: Ubernetes and Redspread"
+start_date = 2016-05-26T00:00:00Z
+end_date   = 2016-05-26T00:00:00Z
+location   = "Santa Clara, CA"
+link       = "http://www.meetup.com/Bay-Area-Kubernetes-Meetup/events/230485265/"
+
+[[events]]
+type       = "meetup"
+name       = "CircleCI May Office Hours"
+start_date = 2016-05-25T00:00:00Z
+end_date   = 2016-05-25T00:00:00Z
+location   = "San Francisco, CA"
+link       = "http://www.meetup.com/CircleCI-Office-Hours/events/230640658/"
+
+[[events]]
+type       = "conference"
+name       = "Write the Docs North America"
+start_date = 2016-05-22T00:00:00Z
+end_date   = 2016-05-24T00:00:00Z
+location   = "Portland, OR"
+link       = "http://www.writethedocs.org/conf/na/2016/"
+
+[[events]]
+type       = "meetup"
+name       = "March Office Hours: Features & Benefits Coming With CircleCI 2.0"
+start_date = 2017-03-02T18:30:00-05:00
+end_date   = 2017-03-02T19:45:00-05:00
+location   = "New York, NY"
+link       = "https://www.meetup.com/circleci-office-hours-nyc/events/237768776/"
+
+[[events]]
+type       = "meetup"
+name       = "DevOps Wall Street: Enabling Agile Culture Shift In Highly Regulated Industries."
+start_date = 2017-03-03T08:00:00-05:00
+end_date   = 2017-03-03T17:00:00-05:00
+location   = "New York, NY"
+link       = "http://devopsnyc.co/"
+
+[[events]]
+type       = "meetup"
+name       = "Continuous Integration and Deployment For Documentation"
+start_date = 2017-03-27T18:30:00-05:00
+end_date   = 2017-03-27T19:45:00-05:00
+location   = "Philadelphia, PA"
+link       = "https://www.meetup.com/WriteTheDocsPHL/events/238320868/"
+
+[[events]]
+type       = "meetup"
+name       = "Notes and Scribbles - What counts as documentation?"
+start_date = 2017-06-20T18:30:00-04:00
+end_date   = 2017-06-20T19:45:00-04:00
+location   = "New York, NY"
+link       = "https://www.meetup.com/WriteTheDocsNYC/events/240583297/"
+
+[[events]]
+type       = "paint-party"
+name       = "Night of Acrylics at Corner Tavern"
+start_date = 2017-11-29T19:00:00-05:00
+end_date   = 2017-11-29T21:00:00-05:00
+location   = "Galloway, NJ"
+link       = "https://nightofacrylics.com/events/e171129082051/"
+
+[[events]]
+type       = "seminar"
+name       = "MICRO-LOANS: WHAT ARE THEY AND HOW DO I APPLY FOR ONE"
+start_date = 2017-12-07T19:10:00-05:00
+end_date   = 2017-12-07T21:12:00-05:00
+location   = "Atlantic City, NJ"
+link       = "https://www.eventbrite.com/e/micro-loans-what-are-they-and-how-do-i-apply-for-one-tickets-39297571093"
+
+[[events]]
+type       = "paint-party"
+name       = "Night of Acrylics at JD's Pub & Grille"
+start_date = 2017-12-12T19:00:00-05:00
+end_date   = 2017-12-12T21:00:00-05:00
+location   = "Galloway, NJ"
+link       = "https://nightofacrylics.com/events/e171212082051/"
+
+[[events]]
+type       = "meetup"
+name       = "South Jersey Linux User Group January Meetup"
+start_date = 2018-01-02T16:00:00-05:00
+end_date   = 2018-01-02T18:00:00-05:00
+location   = "Galloway, NJ"
+link       = "https://twitter.com/sjlug/status/948249181239566337"
+
+[[events]]
+type       = "paint-party"
+name       = "Night of Acrylics at JD's Pub & Grille"
+start_date = 2018-02-01T19:00:00-05:00
+end_date   = 2018-02-01T21:00:00-05:00
+location   = "Galloway, NJ"
+link       = "https://nightofacrylics.com/events/e180201082051/"
+
+[[events]]
+type       = "meetup"
+name       = "Talk: Community Management for Docs on GitHub"
+start_date = 2018-01-17T18:30:00-05:00
+end_date   = 2018-01-17T19:45:00-05:00
+location   = "New York, NY"
+link       = "https://www.meetup.com/WriteTheDocsNYC/events/246419891/"
+
+[[events]]
+type       = "seminar"
+name       = "Snapcraft Seminar"
+start_date = 2018-01-28T18:00:00-05:00
+end_date   = 2018-02-03T10:00:00-05:00
+location   = "Seattle, WA"
+link       = "https://snapcraft.io/"

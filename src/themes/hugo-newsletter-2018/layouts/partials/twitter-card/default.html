@@ -1,0 +1,11 @@
+{{ if .IsPage }}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image:src" content="{{ "/assets/img/logo-twitter-post.png" | absURL }}" />
+<!-- Twitter Card data -->
+<meta name="twitter:text:title" content="{{ .Title }}" />
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+{{ with .Site.Social.twitter }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
+{{ range .Site.Authors }}
+	{{ with .twitter }}<meta name="twitter:creator" content="@{{ . }}" />{{ end }}
+{{ end }}{{ end }}

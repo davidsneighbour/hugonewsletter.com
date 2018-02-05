@@ -1,0 +1,29 @@
+baseurl = "https://HugoNewsletter.com/"
+title = "Hugo Newsletter"
+languageCode = "en-us"
+theme = "hugo-newsletter-2018"
+
+googleAnalytics = "UA-113490124-1"
+
+enableEmoji = true
+
+[blackfriday]
+	hrefTargetBlank	=	true
+
+[social]
+	twitter = "HugoNewsletter"
+
+[[menu.main]]
+	name	= "Home"
+	url		= "/"
+	weight	= -1
+
+[[menu.main]]
+	name	= "Episodes"
+	url		= "/episodes/"
+	weight	= 5
+
+[[menu.main]]
+	name	= "Newsletter"
+	url		= "/newsletter/"
+	weight	= 10

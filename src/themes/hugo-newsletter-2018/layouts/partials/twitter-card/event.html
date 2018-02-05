@@ -1,0 +1,12 @@
+{{ if .IsPage }}
+<meta name="twitter:card" content="summary_large_image" />
+{{ $painting := where (where $.Site.Pages "Section" "paintings") "Params.paintingid" .Params.paintingid }}
+{{ range $painting }}<meta name="twitter:image:src" content="{{ printf "/assets/img/paintings/%s" .Params.lowresfile  | absURL }}" />{{ end }}
+<!-- Twitter Card data -->
+<meta name="twitter:text:title" content="{{ .Title }}" />
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+{{ with .Site.Social.twitter }}<meta name="twitter:site" content="@{{ . }}" />{{ end }}
+{{ range .Site.Authors }}
+	{{ with .twitter }}<meta name="twitter:creator" content="@{{ . }}" />{{ end }}
+{{ end }}{{ end }}

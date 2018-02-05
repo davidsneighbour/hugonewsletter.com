@@ -1,0 +1,33 @@
+{{ define "main" }}
+<main class="list">
+	<h1>{{ .Title }}</h1>
+	{{ $.Scratch.Set "events-empty" true }}
+	{{ range sort (where .Data.Pages ".Params.etype" "public") ".Params.eventdate" }}
+	{{ if ge (time .Params.eventdate ) now }}
+		{{ $venue := where (where $.Site.Pages "Section" "venues") "Params.venueid" .Params.venueid }}
+		{{ $painting := where (where $.Site.Pages "Section" "paintings") "Params.paintingid" .Params.paintingid }}
+			<div class="content-item event">
+			{{ range $painting }}
+				<img class="painting" src="/assets/img/paintings/{{ .Params.lowresfile }}" alt="The painting" />
+				<h2>{{ .Title }}</h2>
+			{{ end }}
+				<ul>
+					<li><strong>Date:</strong> {{ dateFormat "Mon, January 2, 2006" .Params.eventdate }}</li>
+					{{ range $venue }}
+					<li><strong>Venue:</strong> {{ .Params.title  }}</li>
+					<li><strong>Address:</strong><br />{{ .Params.address  }}</li>
+					{{ end }}
+				</ul>
+				<a class="button" href="{{ .Permalink  }}">More Information</a>
+			</div>
+		{{ $.Scratch.Set "events-empty" false }}
+		{{ end }}
+	{{ end }}
+	{{ if $.Scratch.Get "events-empty" }}
+	<div>
+		<p>There are currently no events scheduled.</p>
+		<p>We'll going to enjoy the rest of the holiday season and pick back up January 2018. To hear when we schedule new events, make sure to sign up to our <strong><a href="{{ "/newsletter" | absURL }}">newsletter</a></strong>.
+	</div>
+	{{ end }}
+</main>
+{{ end }}

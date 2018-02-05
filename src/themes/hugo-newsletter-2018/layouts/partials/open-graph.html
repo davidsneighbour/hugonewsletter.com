@@ -1,0 +1,5 @@
+{{ if .Params.eventID }}
+	{{ partial "open-graph/event" $ }}
+{{ else }}
+	{{ partial "open-graph/default" $ }}
+{{ end }}

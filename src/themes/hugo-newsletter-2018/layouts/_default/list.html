@@ -1,0 +1,8 @@
+{{ define "main" }}
+<main class="list">
+	<h1>{{ .Title }}</h1>
+	{{ range .Data.Pages }}
+			<h2>{{ .Title }}</h2>
+	{{ end }}
+</main>
+{{ end }}
