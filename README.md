@@ -1,10 +1,10 @@
 # HugoNewsletter.com
 
-<img src="src/static/assets/img/logo.svg" style="display: block;width: 120px; margin: 0 auto;" alt="Hugo Newsletter logo">
+<img src="src/static/assets/img/logo.svg" alt="Hugo Newsletter logo" title="Hugo Newsletter" width="100%" height="100" style="margin: 0 auto; display: block;" >
 
 Many of us frequently visit the [Hugo forum](https://discourse.gohugo.io) and absorb so much Hugo news and happenings. Even more so if you also follow [@GoHugo.io](https://twitter.com/GoHugoIO) on Twitter. But not everyone does or can keep up.
 
-Luckily, the [Hugo Newsletter](http://hugonewsletter.com/) provides a monthly recap of everything Hugo. That means information about Hugo releases and notifications about important documentation updates. We'll also look at new Hugo themes and helpful discussions on the Hugo forum. Helpful blog posts from around the Internet are also included in the newsletter.
+Luckily, the [Hugo Newsletter](http://hugonewsletter.com/) provides a monthly recap of everything Hugo. That means information about Hugo releases and notifications about important documentation updates. We'll also look at new Hugo themes and helpful discussions on the Hugo forum. Useful blog posts from around the Internet are also included in the newsletter.
 
 ## Stay up to date
 
@@ -22,9 +22,10 @@ Interested in helping out with this newsletters? There are a couple of ways you 
 
 ## Our work in progress
 
-As you can see, we're still setting up the website while we prepare for the first newsletter publication. Some of things on our radar are:
+As you can see, we're still setting up the website. Some of things on our radar are:
 
-- [ ] Publish the first newsletter.
+- [x] Publish the first newsletter.
+- [ ] Create the newsletter website.
 - [ ] Host previous email newsletters on the website.
 - [ ] Add an RSS feed to the website.
 
