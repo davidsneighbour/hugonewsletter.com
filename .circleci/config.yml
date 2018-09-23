@@ -15,11 +15,11 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:0.35
+      - image: cibuilds/hugo:0.48
     steps:
       - checkout
       - run:
-          name: "Build Website With  Hugo"
+          name: "Build Website with Hugo"
           command: HUGO_ENV=production hugo -v -s src/
       - run:
           name: "Test Website"
@@ -31,7 +31,7 @@ jobs:
 
   deploy:
     docker:
-      - image: cibuilds/hugo:0.35
+      - image: cibuilds/hugo:0.48
     steps:
       - attach_workspace:
           at: src
