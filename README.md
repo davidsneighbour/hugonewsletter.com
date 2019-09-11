@@ -20,16 +20,9 @@ Interested in helping out with this newsletters? There are a couple of ways you 
 - When you come across something interesting for the newsletter, send Ricardio a DM on [the Hugo forum](https://discourse.gohugo.io/u/FelicianoTech), tweet him at [@FelicianoTech](https://twitter.com/FelicianoTech), or contact him through [his website](https://feliciano.tech/).
 - Share the Hugo Newsletters with friends.
 
-## Our work in progress
+## Our work is in progress
 
-As you can see, we're still setting up the website. Some of things on our radar are:
-
-- [x] Publish the first newsletter.
-- [ ] Create the newsletter website.
-- [ ] Host previous email newsletters on the website.
-- [ ] Add an RSS feed to the website.
-
-If you have an idea or suggestion, feel free to [open an issue](https://github.com/felicianotech/hugonewsletter.com/issues/new).
+If you have an idea or suggestion, feel free to [open an issue](https://github.com/davidsneighbour/hugonewsletter.com/issues/new).
 
 ## About
 

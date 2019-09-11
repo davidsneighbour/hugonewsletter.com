@@ -1,20 +1,14 @@
 # Contributing to the Hugo Newsletter project
 Thanks for your interest in contributing to this project! :tada::+1: Below are some tips on getting the most out of contributing.
 
----
-#### Table of contents
-- [Newsletter content](#newsletter-content)
-- [Issues](#issues)
-- [Pull requests](#pull-requests)
----
-
 ## Newsletter content
 When you come across something interesting for the newsletter, you can let us know in various ways:
 
 - Tweet [@HugoNewsletter](https://twitter.com/HugoNewsletter) on Twitter.
-- Send Ricardio (the project's owner) a DM on [the Hugo forum](https://discourse.gohugo.io/u/FelicianoTech).
-- Send [an email](https://feliciano.tech/contact/) to Ricardio.
-- [Open a Github issue](https://github.com/felicianotech/hugonewsletter.com/issues/new).
+- Send Patrick (the project's owner) a DM on [the Hugo forum](https://discourse.gohugo.io/u/pkollitsch).
+- [Open a Github issue](https://github.com/davidsneighbour/hugonewsletter.com/issues/new).
+
+We are working on automating things around the newsletter, so if you want to add a specific entry to the newsletter feel free to create a `myentryname.md` inside of the `content/yyyy/mm` folder. Where yyyy obviously is the year of the newsletter issue and mm the month of publication. I will create folders for the future newsletters in advanced time.
 
 ## Issues
 
