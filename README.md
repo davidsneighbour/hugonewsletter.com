@@ -16,15 +16,9 @@ You can also follow the Hugo newsletter on Twitter: [@HugoNewsletter](https://tw
 
 Interested in helping out with this newsletters? There are a couple of ways you can help:
 
-- Fork this project and make theme adjustments or content improvements.
-- When you come across something interesting for the newsletter, send Ricardio a DM on [the Hugo forum](https://discourse.gohugo.io/u/FelicianoTech), tweet him at [@FelicianoTech](https://twitter.com/FelicianoTech), or contact him through [his website](https://feliciano.tech/).
+- Fork this project and make theme adjustments or content improvements and send a pull request.
 - Share the Hugo Newsletters with friends.
 
 ## Our work is in progress
 
 If you have an idea or suggestion, feel free to [open an issue](https://github.com/davidsneighbour/hugonewsletter.com/issues/new).
-
-## About
-
-The Hugo newsletter is a project by Ricardo Feliciano. You can check out his website [here](https://feliciano.tech/) or follow [@FelicianoTech](https://twitter.com/FelicianoTech) on Twitter.
-
