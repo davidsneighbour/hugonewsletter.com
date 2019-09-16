@@ -1,6 +1,6 @@
 # HugoNewsletter.com
 
-!(Hugo Newsletter)[https://raw.githubusercontent.com/davidsneighbour/hugonewsletter.com/master/static/assets/img/banner-1280x640.svg.png]
+![Hugo Newsletter](https://raw.githubusercontent.com/davidsneighbour/hugonewsletter.com/master/static/assets/img/banner-1280x640.svg.png)
 
 Many of us frequently visit the [Hugo forum](https://discourse.gohugo.io) and absorb so much Hugo news and happenings. Even more so if you also follow [@GoHugo.io](https://twitter.com/GoHugoIO) on Twitter. But not everyone does or can keep up.
 
