@@ -1,0 +1,18 @@
+{
+  "name": "hugonewsletter.com",
+  "version": "2.0.0",
+  "description": "Repository for the (unofficial) Hugo Newsletter.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidsneighbour/hugonewsletter.com.git"
+  },
+  "author": "Patrick Kollitsch <patrick@hugonewsletter.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidsneighbour/hugonewsletter.com/issues"
+  },
+  "homepage": "https://github.com/davidsneighbour/hugonewsletter.com",
+  "dependencies": {
+    "mjml": "^4.5.0"
+  }
+}
