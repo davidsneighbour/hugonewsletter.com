@@ -1,0 +1,12 @@
+{
+	"links": [
+		{
+			"title": "Deploy Hugo project to GitHub Pages with GitHub Actions",
+			"link": "https://discourse.gohugo.io/t/deploy-hugo-project-to-github-pages-with-github-actions/20725",
+			"author": {
+				"name": "peaceiris",
+				"link": "https://discourse.gohugo.io/u/peaceiris/summary"
+			}
+		}
+	]
+}
