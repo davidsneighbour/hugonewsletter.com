@@ -8,7 +8,7 @@
 [context.production]
   [context.production.environment]
   	TZ = "Asia/Bangkok"
-    HUGO_VERSION = "0.57.2"
+    HUGO_VERSION = "0.58.2"
     HUGO_ENV = "production"
 	HUGO_ENABLEGITINFO = "true"
 
