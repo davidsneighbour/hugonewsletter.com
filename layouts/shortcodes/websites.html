@@ -1,0 +1,10 @@
+<ul>
+{{ $dataJ := getJSON "/content/2019/10/websites.json"}}
+{{ range $dataJ.websites }}
+	<li>
+
+<a href="{{ .link }}">{{ .title }}</a> by <a href="{{.author.link}}">{{.author.name}}</a>
+
+	</li>
+{{ end }}
+</ul>

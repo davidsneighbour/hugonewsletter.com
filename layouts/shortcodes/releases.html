@@ -1,0 +1,6 @@
+<ul>
+{{ $dataJ := getJSON "/content/2019/10/releases.json"}}
+{{ range $dataJ.releases }}
+	<li>{{ .date }}: <a href="{{ .link}}">{{ .version }}</a> (<a href="{{ .github }}">Github</a>) {{ with .description }}{{ . }}{{ end }}</li>
+{{ end }}
+</ul>
