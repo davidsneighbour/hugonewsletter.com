@@ -5,7 +5,7 @@ catimagelink: https://unsplash.com/photos/cQDu1G6lmRM
 catimageintro: And here is a cat picture. This cat is silently judging you.
 ---
 
-# Hi there Guinea Pig!
+# Hi there, Guinea Pig!
 
 <small>Disclaimer: [The Oxford Dictionary](https://www.lexico.com/en/definition/guinea_pig) defines a Guinea Pig as "A person or thing used as a subject for experiment." and I am using this term solely with this definition ;]</small>
 
