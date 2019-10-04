@@ -25,13 +25,19 @@ Patrick
 
 # Hugo Releases
 
+<small>A list of recent releases with links to release notes and the github collection of issues/pull requests for this release.</small>
+
 {{< releases >}}
 
 # How To's 
 
+<small>A link list of articles about Hugo, How to's, guides, and so one.</small>
+
 {{< howto >}}
 
 # New Hugo Websites
+
+<small>A list of websites created with Hugo. Feel free to submit yours.</small>
 
 {{< websites >}}
 
