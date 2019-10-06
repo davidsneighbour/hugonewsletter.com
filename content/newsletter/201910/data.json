@@ -1,0 +1,52 @@
+{
+	"releases":[
+		{
+			"version": "v0.58.3",
+			"date": "2019-09-19",
+			"description": "A bug-fix release.",
+			"link": "https://gohugo.io/news/0.58.3-relnotes/",
+			"github": "https://github.com/gohugoio/hugo/releases/tag/v0.58.3"
+		},
+		{
+			"version": "v0.58.2",
+			"date": "2019-09-13",
+			"description": "A bug-fix release.",
+			"link": "https://gohugo.io/news/0.58.2-relnotes/",
+			"github": "https://github.com/gohugoio/hugo/releases/tag/v0.58.2"
+		},
+		{
+			"version": "v0.58.1",
+			"date": "2019-09-06",
+			"description": "A bug-fix release.",
+			"link": "https://gohugo.io/news/0.58.1-relnotes/",
+			"github": "https://github.com/gohugoio/hugo/releases/tag/v0.58.1"
+		},
+		{
+			"version": "v0.58.0",
+			"date": "2019-09-04",
+			"description": "...",
+			"link": "https://gohugo.io/news/0.58.0-relnotes/",
+			"github": "https://github.com/gohugoio/hugo/releases/tag/v0.58.0"
+		}
+	],
+	"websites": [
+		{
+			"link": "https://www.nolocade.com/",
+			"title": "nolocade.com",
+			"author": {
+				"name": "@brianjhigby",
+				"link": "https://twitter.com/brianjhigby"
+			}
+		}
+	],
+	"links": [
+		{
+			"title": "Deploy Hugo project to GitHub Pages with GitHub Actions",
+			"link": "https://discourse.gohugo.io/t/deploy-hugo-project-to-github-pages-with-github-actions/20725",
+			"author": {
+				"name": "peaceiris",
+				"link": "https://discourse.gohugo.io/u/peaceiris/summary"
+			}
+		}
+	]
+}

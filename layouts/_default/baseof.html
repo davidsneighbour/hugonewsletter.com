@@ -1,33 +1,19 @@
-{{ $alts := .AlternativeOutputFormats }}
-{{ range .OutputFormats }}
-	{{ $item := .Name }}
-	{{ range $alts }}
-		{{ if ne .Name $item }}
-			{{ $.Scratch.Set "curOutputFormat" $item }}
-		{{ end }}
-	{{ end }}
-{{ end }}
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
-	{{ partial "stylesheets" . }}
-	{{ partial "head-js" . }}
-	{{ if (getenv "HUGO_ENV") eq "production" }}
-		{{ template "_internal/google_analytics.html" . }}
-	{{ end }}
-	<link rel="icon" type="image/png" href="/favicon.png" />
-	<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
-	<meta name="description" content="{{ .Site.Params.Description }}" />
-	{{ partial "open-graph" . }}
-	{{ partial "twitter-card" . }}
-	{{ partial "head-verifications" . }}
-</head>
-<body class="{{ if .IsHome }}home {{ end }}{{ if .Section }}section-{{ .Section }}{{ end }} outputformat-{{ $.Scratch.Get "curOutputFormat" }}">
-	{{ partial "header" . }}
-	{{ block "main" . }}{{ end }}
-	{{ if not .IsHome }}{{ partial "footer" . }}{{ end }}
-	{{ partial "footer-js" . }}
-</body>
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="icon" type="image/png" href="/favicon.png" />
+		<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
+		<meta name="description" content="{{ .Site.Params.Description }}" />
+		{{ partialCached "stylesheets.html" . }}
+		{{ if (getenv "HUGO_ENV") eq "production" }}
+			{{ template "_internal/google_analytics.html" . }}
+		{{ end }}
+	</head>
+	<body>
+		<div class="container">
+			{{ block "main" . }}{{ end }}
+		</div>
+	</body>
 </html>

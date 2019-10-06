@@ -1,6 +1,7 @@
-<link rel="stylesheet" href="/vendor/font-awesome-4.7.0/css/font-awesome.min.css" />
-<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-<link rel="stylesheet" href="{{ "assets/css/normalize.css" | relURL }}" />
-<link rel="stylesheet" href="{{ "assets/css/main.css" | relURL }}" />
-{{ if .IsHome }}<link rel="stylesheet" href="{{ "assets/css/homepage.css" | relURL }}" />{{ end }}
-<link rel="stylesheet" href="{{ "assets/css/mobile.css" | relURL }}" media="(max-width:1170px)" />
+{{ $sass         := resources.Get "scss/theme.scss" }}
+{{ $sassIncludes := (slice "node_modules/") }}
+{{ $cssTarget    := "theme.css" }}
+{{ $cssOpts      := (dict "targetPath" $cssTarget "enableSourceMap" true "includePaths" $sassIncludes "outputStyle" "compressed") }}
+
+{{ $css := $sass | toCSS $cssOpts | resources.PostCSS | fingerprint }}
+<link rel="stylesheet" href="{{ $css.Permalink | absURL }}" integrity="{{ $css.Data.Integrity }}">
