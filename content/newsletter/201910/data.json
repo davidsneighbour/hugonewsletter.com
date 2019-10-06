@@ -24,11 +24,12 @@
 		{
 			"version": "v0.58.0",
 			"date": "2019-09-04",
-			"description": "...",
+			"description": "new: Image Processing",
 			"link": "https://gohugo.io/news/0.58.0-relnotes/",
 			"github": "https://github.com/gohugoio/hugo/releases/tag/v0.58.0"
 		}
 	],
+	"releasenotes": "Hugo v0.58.0 introduces <a href=\"https://gohugo.io/functions/images/#image-filters\" target=\"_blank\">image filters</a> that let you play with images by changing brightness, Gaussian blur, grayscale, saturation, sepia, and much more. Enough to play around for a while. It also brings EXIF functionality. In previous versions all EXIF tags got removed, now you can <a href=\"https://gohugo.io/content-management/image-processing/#image-processing-config\" target=\"_blank\">define in the configuration</a> what to keep and <a href=\"https://gohugo.io/content-management/image-processing/#exif\" target=\"_blank\">work with EXIF tags in your templates</a>.&nbsp;",
 	"websites": [
 		{
 			"link": "https://www.nolocade.com/",

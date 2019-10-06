@@ -14,9 +14,13 @@
 
 <ul>
 	{{ range $dataJ.releases }}
-		<li><a href="{{ .link }}">{{ .title }}</a> by <a href="{{.author.link}}">{{.author.name}}</a></li>
+		<li>{{ .date }}: <a href="{{ .link }}">{{ .version }}</a> (<a href="{{ .github }}">GitHub</a>): {{ .description }}</li>
 	{{ end }}
 </ul>
+
+{{ with $dataJ.releasenotes }}
+<p>{{ . | safeHTML }}</p>
+{{ end }}
 
 <h1>How-Tos </h1>
 
