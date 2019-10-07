@@ -31,7 +31,15 @@ p {
 }
 
 .display-4 {
+
     @extend .text-center;
     @extend .mb-5;
     font-size:3rem;
+
+}
+
+.alert p:last-child {
+
+    margin-bottom:0;
+
 }
