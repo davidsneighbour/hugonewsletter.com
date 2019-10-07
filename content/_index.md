@@ -1,12 +1,12 @@
 ---
-title: "Hugo Newsletter"
+title: "The (unofficial) Hugo Newsletter"
 ---
 
-The unofficial source for all the Hugo happenings around the Internet.
+Your source for all from the Hugoverse.
 
-Hugo Newsletter is a curated list of Hugo releases, important Docs updates, new & updated themes, interesting discussions from the Hugo forums, and blog posts on Hugo from around the web. A new issue is released on the first Monday of every month.
+The (unofficial) Hugo Newsletter is a curated list of Hugo releases, important Docs updates, new & updated themes, interesting discussions from the Hugo forums, and blog posts on Hugo from around the web. A new issue is released on the first Monday of every month.
 
-Feel free to (re)register while we are transitioning the project. The next Hugo Newsletter will be published as always on Monday, October 7th. 
+Register now to not miss the next issue. The next Hugo Newsletter will be published as always on Monday, November 4th. 
 
 {{< mailchimp >}}
 

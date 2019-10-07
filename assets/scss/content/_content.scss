@@ -29,3 +29,9 @@ p {
     hyphenate-limit-zone: 8%;
 
 }
+
+.display-4 {
+    @extend .text-center;
+    @extend .mb-5;
+    font-size:3rem;
+}
