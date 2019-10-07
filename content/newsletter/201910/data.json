@@ -48,6 +48,22 @@
 				"name": "peaceiris",
 				"link": "https://discourse.gohugo.io/u/peaceiris/summary"
 			}
+		},
+		{
+			"title": "Hugo Modules for Dummies",
+			"link": "https://discourse.gohugo.io/t/hugo-modules-for-dummies/20758",
+			"author": {
+				"name": "craftsmandigital",
+				"link": "https://discourse.gohugo.io/u/craftsmandigital/summary"
+			}
+		},
+		{
+			"title": "Hugo Slowstart for Beginners",
+			"link": "https://discourse.gohugo.io/t/hugo-101-slowstart-for-beginners/18383",
+			"author": {
+				"name": "michael_henderson",
+				"link": "https://discourse.gohugo.io/u/michael_henderson/summary"
+			}
 		}
 	]
 }
