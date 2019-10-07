@@ -1,5 +1,7 @@
 ---
+title: A soft opening - Hugo 0.58.0, Slowstart for Beginners and a cat silently judging you 🐱
 url: /2019/10/
+date: 2019-10-07T19:00:00+07:00
 catimagetitle: Photo by Tatyana Eremina on Unsplash
 catimagelink: https://unsplash.com/photos/cQDu1G6lmRM
 catimageintro: And here is a cat picture. This cat is silently judging you.
