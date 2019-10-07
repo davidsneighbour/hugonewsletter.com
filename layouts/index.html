@@ -3,5 +3,8 @@
 		<img class="col-4 img-fluid" src="/assets/img/logo.svg" alt="Hugo Newsletter Logo" />
 	</div>
 	<h1 class="display-4">{{ .Title }}</h1>
+
+	{{ partialCached "latest-issue" . }}
+
 	{{ .Content }}
 {{ end }}
