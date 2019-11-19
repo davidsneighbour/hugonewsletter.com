@@ -65,5 +65,12 @@
 				"link": "https://discourse.gohugo.io/u/michael_henderson/summary"
 			}
 		}
+	],
+	"contributors": [
+		{
+			"name": "davidsneighbour",
+			"web": "https://davids-neighbour.com/",
+			"github": "https://github.com/davidsneighbour"
+		}
 	]
 }

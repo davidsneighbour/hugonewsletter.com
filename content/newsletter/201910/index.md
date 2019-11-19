@@ -1,4 +1,5 @@
 ---
+date: 2019-11-07
 title: A soft opening - Hugo 0.58.0, Slowstart for Beginners and a cat silently judging you 🐱
 url: /2019/10/
 date: 2019-10-07T19:00:00+07:00
