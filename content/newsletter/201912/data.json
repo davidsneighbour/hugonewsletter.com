@@ -1,0 +1,32 @@
+{
+    "releases":[
+        {
+            "version": "",
+            "date": "",
+            "description": "",
+            "link": "",
+            "github": ""
+        }
+    ],
+    "releasenotes": "",
+    "websites": [
+        {
+            "link": "",
+            "title": "",
+            "author": {
+                "name": "",
+                "link": ""
+            }
+        }
+    ],
+    "links": [
+        {
+            "title": "",
+            "link": "",
+            "author": {
+                "name": "",
+                "link": ""
+            }
+        }
+    ]
+}
