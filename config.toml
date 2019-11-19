@@ -6,6 +6,8 @@ googleAnalytics = "UA-146893148-1"
 
 enableEmoji = true
 
+theme = ['hugo-debugprint']
+
 [blackfriday]
 	hrefTargetBlank	=	true
 
