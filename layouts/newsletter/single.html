@@ -34,13 +34,22 @@
 
 <h1>New Hugo Websites</h1>
 
-<small>A list of websites created with Hugo. Feel free to submit yours.</small>
-
+{{- with $dataJ.websites }}
 <ul>
 	{{ range $dataJ.websites }}
 		<li><a href="{{ .link }}">{{ .title }}</a> by <a href="{{.author.link}}">{{.author.name}}</a></li>
 	{{ end }}
 </ul>
+{{ end -}}
+
+{{ $websitenotes := printf "%s%s%s" "/" .File.Dir "websites" }}
+{{ with .Site.GetPage $websitenotes }}
+	{{ .Content }}
+{{ end }}
+
+<p>
+	If you have a new website that is built with Hugo, <a href="https://github.com/davidsneighbour/hugonewsletter.com/issues">feel free to submit it for our next issue</a>.
+</p>
 
 <h1>Cat pic</h1>
 
@@ -53,12 +62,22 @@
 
 <h1>How did I drive?</h1>
 
-Contributor<del>s</del> to this newsletter: [@davidsneighbour](https://github.com/davidsneighbour)
+<p>Feel free to forward, share and link this newsletter. If nobody reads a newsletter, does it exist?</p>
 
-You are aware, that you can participate in creating this monthly newsletter? Good. [Check out our Github repository](https://github.com/davidsneighbour/hugonewsletter.com). Each months issue ([for example this current one](https://github.com/davidsneighbour/hugonewsletter.com/tree/master/content/2019/10)) has several data files where you can add links and information for our lists. It's as easy as opening either an issue or a pull request. If you want to add full articles or sections then feel free to open pull requests on that months `index.md`. Let us know about bugs, display problems, your millenial angst via [issues](https://github.com/davidsneighbour/hugonewsletter.com/issues). What could possibly go wrong? This newsletter is open for everyone. Just do it. 
+<strong>Contributors to this newsletter:</strong>
+<ul>
+	{{- range $dataJ.contributors }}
+	<li>
+		{{ .name }}&nbsp;
+		{{ with .web }}<a href="{{ . }}" class="icon">{{- partialCached "svg/home.svg" . -}}</a>&nbsp;{{ end }}
+		{{ with .github }}<a href="{{ . }}" class="icon">{{- partialCached "svg/github.svg" . -}}</a>&nbsp;{{ end }}
+		{{ with .gitlab }}<a href="{{ . }}" class="icon">{{- partialCached "svg/gitlab.svg" . -}}</a>&nbsp;{{ end }}
+	</li>
+	{{ end -}}
+</ul>
 
-<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/b7f0X8Okk1uyk" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
-
-You will be linked if you contribute ;) Deal?
+<p>
+	You are aware, that you can participate in creating this monthly newsletter? Good. <a href="https://github.com/davidsneighbour/hugonewsletter.com">Check out our Github repository</a>. Each months issue (<a href="https://github.com/davidsneighbour/hugonewsletter.com/tree/master/content/2019/10">for example this one</a>) has several data files where you can add links and information for our lists. It's as easy as opening either an issue or a pull request. If you want to add full articles or sections then feel free to open pull requests on that months `index.md`. Let us know about bugs, display problems, your millenial angst via <a href="https://github.com/davidsneighbour/hugonewsletter.com/issues">issues</a>. What could possibly go wrong? This newsletter is open for everyone. Just do it. 
+</p>
 
 {{ end }}
