@@ -1,32 +1,66 @@
 {
 	"releases":[
 		{
-			"version": "",
-			"date": "",
-			"description": "",
-			"link": "",
-			"github": ""
-		}
-	],
-	"releasenotes": "",
-	"websites": [
+			"version": "v0.59.1",
+			"date": "2019-10-31",
+			"description": "A bug-fix release.",
+			"link": "https://gohugo.io/news/0.59.1-relnotes/",
+			"github": "https://github.com/gohugoio/hugo/releases/tag/v0.59.1"
+		},
 		{
-			"link": "",
-			"title": "",
-			"author": {
-				"name": "",
-				"link": ""
-			}
+			"version": "v0.59.0",
+			"date": "2019-10-21",
+			"description": "Image formats and page navigation improvements.",
+			"link": "https://gohugo.io/news/0.59.0-relnotes/",
+			"github": "https://github.com/gohugoio/hugo/releases/tag/v0.59.0"
 		}
 	],
 	"links": [
 		{
-			"title": "",
-			"link": "",
+			"title": "How to migrate a Hugo repo between providers",
+			"link": "https://discourse.gohugo.io/t/howto-migrate-a-hugo-project-repo-to-another-git-provider/21419",
 			"author": {
-				"name": "",
-				"link": ""
+				"name": "onedrawingperday",
+				"link": "https://discourse.gohugo.io/u/onedrawingperday/summary"
+			}
+		},
+		{
+			"title": "Range all pages of a section (including page bundles)",
+			"link": "https://discourse.gohugo.io/t/all-pages-by-section-including-page-bundles/21550",
+			"author": {
+				"name": "Scott_Talsma",
+				"link": "https://discourse.gohugo.io/u/scott_talsma/summary"
+			}
+		},
+		{
+			"title": "Custom sort Hugo single pages",
+			"link": "https://discourse.gohugo.io/t/custom-sort-hugo-single-pages/21442",
+			"author": {
+				"name": "FelicianoTech",
+				"link": "https://discourse.gohugo.io/u/felicianotech/summary"
+			}
+		},
+		{
+			"title": "Turn a Github Wiki into a Hugo website",
+			"link": "https://discourse.gohugo.io/t/my-tips-to-turn-a-github-wiki-into-hugo-website/21217",
+			"author": {
+				"name": "tcgriffith",
+				"link": "https://discourse.gohugo.io/u/tcgriffith/summary"
 			}
 		}
+	],
+	"contributors": [
+		{
+			"name": "@davidsneighbour",
+			"web": "https://davids-neighbour.com/",
+			"github": "https://github.com/davidsneighbour"
+		}
+	],
+	"notes": [
+		{
+			"websites": "newsletter/2019/11/websites.md"
+		}
+
 	]
 }
+
