@@ -2,3 +2,5 @@ node_modules
 scratchbook
 resources
 trace.txt
+package-lock.json
+hugonewsletter.sublime-workspace
