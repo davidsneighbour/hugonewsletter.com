@@ -1,6 +1,6 @@
 {
   "name": "hugonewsletter.com",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Repository for the (unofficial) Hugo Newsletter.",
   "repository": {
     "type": "git",
@@ -56,5 +56,5 @@
     "release": "standard-version --release-as patch -a -t \"\" && git push --follow-tags origin master",
     "release-next": "standard-version --release-as minor -a -t \"\" && git push --follow-tags origin master",
     "release-major": "standard-version --release-as major -a -t \"\" && git push --follow-tags origin master"
-  },
+  }
 }
