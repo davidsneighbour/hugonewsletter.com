@@ -7,7 +7,7 @@
 		<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 		<meta name="description" content="{{ .Site.Params.Description }}" />
 		{{ partialCached "stylesheets.html" . }}
-		{{ if eq (getenv "HUGO_ENV") "production" }}
+		{{ if eq hugo.IsProduction "production" }}
 			{{ template "_internal/google_analytics.html" . }}
 		{{ end }}
 	</head>
