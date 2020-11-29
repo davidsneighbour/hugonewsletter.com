@@ -31,16 +31,14 @@ p {
 }
 
 .navigation {
-
   .navbar {
     padding-left: 0;
-
     img {
       width: auto;
-      height: 64px;
+      height: 50px;
+      margin-top: -1.2rem;
     }
   }
-
 }
 
 footer .navbar-brand img {
@@ -58,13 +56,11 @@ footer .navbar-brand img {
   height: auto;
 }
 
-
 #newsletter {
-
-
   #catpic {
     img {
-      width:100%;height:auto;
+      width: 100%;
+      height: auto;
     }
   }
 }
