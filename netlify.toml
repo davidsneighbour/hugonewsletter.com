@@ -1,23 +1,10 @@
 [build]
-  publish = "public/"
-  command = "hugo --gc --minify"
+publish = "public/"
+command = "hugo --gc --minify"
 
 [build.environment]
-  PHP_VERSION="7.2"
-
-[context.production]
-  [context.production.environment]
-  	TZ = "Asia/Bangkok"
-    HUGO_VERSION = "0.74.3"
-    HUGO_ENV = "production"
-	HUGO_ENABLEGITINFO = "true"
-
-# https://www.netlify.com/docs/netlify-toml-reference/#post-processing
-[build.processing]
-  skip_processing = true
-
-[context.master.processing]
-  skip_processing = false
-[context.master.processing.css]
-  bundle = true
-  minify = true
+PHP_VERSION="7.2"
+TZ = "Asia/Bangkok"
+HUGO_VERSION = "0.79.0"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
