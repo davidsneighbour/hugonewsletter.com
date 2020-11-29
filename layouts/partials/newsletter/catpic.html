@@ -1,0 +1,12 @@
+<section id="catpic">
+    <h3>Cat pic</h3>
+    <p>{{ $.Page.Params.catimageintro }}</p>
+    <figure>
+        <img src="cat-picture.jpg" alt="{{ $.Page.Params.catimageintro }}" />
+        <figcaption>
+            <a href="{{ $.Page.Params.catimagelink }}">
+                {{ $.Page.Params.catimagetitle }}
+            </a>
+        </figcaption>
+    </figure>
+</section>

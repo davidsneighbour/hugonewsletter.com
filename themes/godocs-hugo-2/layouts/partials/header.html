@@ -1,0 +1,104 @@
+{{ "<!-- navigation -->" | safeHTML }}
+<header class="sticky-top navigation">
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
+        {{ if .Site.Params.logo }}
+        <img class="img-fluid" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}">
+        {{ else }}
+        {{ .Site.Title }}
+        {{ end }}</a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-align-right h4 text-dark"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav mx-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Params.Home }}</a>
+          </li>
+          {{ range .Site.Menus.main }}
+          {{ if .HasChildren }}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+              {{ .Name }}
+            </a>
+            <div class="dropdown-menu">
+              {{ range .Children }}
+              <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </li>
+          {{ else }}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+          <li class="nav-link">
+            <!-- Language List -->
+            {{ if .IsTranslated }}
+            <select class="nav-item" id="select-language" onchange="location = this.value;">
+              {{ $siteLanguages := .Site.Languages}}
+              {{ $pageLang := .Page.Lang}}
+              {{ range .Page.AllTranslations }}
+              {{ $translation := .}}
+              {{ range $siteLanguages }}
+              {{ if eq $translation.Lang .Lang }}
+              {{ $selected := false }}
+              {{ if eq $pageLang .Lang}}
+              <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}" selected>{{ .LanguageName }}
+              </option>
+              {{ else }}
+              <option id="{{ $translation.Language }}" value="{{ $translation.Permalink }}">{{ .LanguageName }}</option>
+              {{ end }}
+              {{ end }}
+              {{ end }}
+              {{ end }}
+            </select>
+            {{ end }}
+          </li>
+        </ul>
+
+        <!-- for mobile -->
+        <div class="d-lg-none d-block">
+          {{ if .Site.Params.navigation_button_bordered.enable }}
+          {{ "<!-- get start btn -->" | safeHTML }}
+          <a href="{{ .Site.Params.navigation_button_bordered.link | absURL }}"
+            class="btn btn-sm btn-outline-primary ml-lg-4">{{ .Site.Params.navigation_button_bordered.label }}</a>
+          {{ end }}
+
+          {{ if .Site.Params.navigation_button_solid.enable }}
+          {{ "<!-- get start btn -->" | safeHTML }}
+          <a href="{{ .Site.Params.navigation_button_solid.link | absURL }}"
+            class="btn btn-sm btn-primary ml-lg-4">{{ .Site.Params.navigation_button_solid.label }}</a>
+          {{ end }}
+        </div>
+        <!-- /for mobile -->
+      </div>
+
+      <div class="form-inline search-wrapper my-3">
+        <input id="search-by" type="search" class="form-control" placeholder="{{ i18n `search_placeholder`}}"><i class="ti-search"></i>
+      </div>
+
+      <!-- for desktop -->
+      <div class="d-lg-flex d-none">
+        {{ if .Site.Params.navigation_button_bordered.enable }}
+        {{ "<!-- get start btn -->" | safeHTML }}
+        <a href="{{ .Site.Params.navigation_button_bordered.link | absURL }}"
+          class="btn btn-sm btn-outline-primary ml-lg-4">{{ .Site.Params.navigation_button_bordered.label }}</a>
+        {{ end }}
+
+        {{ if .Site.Params.navigation_button_solid.enable }}
+        {{ "<!-- get start btn -->" | safeHTML }}
+        <a href="{{ .Site.Params.navigation_button_solid.link | absURL }}"
+          class="btn btn-sm btn-primary ml-lg-4">{{ .Site.Params.navigation_button_solid.label }}</a>
+        {{ end }}
+      </div>
+      <!-- /for desktop -->
+
+    </nav>
+  </div>
+</header>
+{{ "<!-- /navigation -->" | safeHTML }}

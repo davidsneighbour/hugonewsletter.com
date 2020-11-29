@@ -1,83 +1,30 @@
 {{ define "main" }}
-{{ $dataJ := getJSON "content/" .File.Dir "data.json" }}
 
-<img src="/assets/img/banner-1280x640.svg.png" style="width:100%;height:auto;"/>
-
-<main class="single">
-	<p><strong>Subject:</strong> {{ .Title }}</p>
-	<div class="content">{{ .Content }}</div>
-</main>
-
-<h1>Hugo Releases</h1>
-
-<small>A list of recent releases with links to release notes and the github collection of issues/pull requests for this release.</small>
-
-<ul>
-	{{ range $dataJ.releases }}
-		<li>{{ .date }}: <a href="{{ .link }}">{{ .version }}</a> (<a href="{{ .github }}">GitHub</a>): {{ .description }}</li>
-	{{ end }}
-</ul>
-
-{{ with $dataJ.releasenotes }}
-<p>{{ . | safeHTML }}</p>
-{{ end }}
-
-<h1>How-Tos and Tipps&amp;Tricks</h1>
-
-<small>A link list of articles about Hugo, How to's, guides, and so one.</small>
-
-<ul>
-	{{ range $dataJ.links }}
-		<li><a href="{{ .link }}">{{ .title }}</a> by <a href="{{.author.link}}">{{.author.name}}</a></li>
-	{{ end }}
-</ul>
-
-<h1>New Hugo Websites</h1>
-
-{{- with $dataJ.websites }}
-<ul>
-	{{ range $dataJ.websites }}
-		<li><a href="{{ .link }}">{{ .title }}</a> by <a href="{{.author.link}}">{{.author.name}}</a></li>
-	{{ end }}
-</ul>
-{{ end -}}
-
-{{ $websitenotes := printf "%s%s%s" "/" .File.Dir "websites" }}
-{{ with .Site.GetPage $websitenotes }}
-	{{ .Content }}
-{{ end }}
-
-<p>
-	If you have a new website that is built with Hugo, <a href="https://github.com/davidsneighbour/hugonewsletter.com/issues">feel free to submit it for our next issue</a>.
-</p>
-
-<h1>Cat pic</h1>
-
-<p>{{ $.Page.Params.catimageintro }}</p>
-
-<figure>
-<img src="cat-picture.jpg" alt="{{ $.Page.Params.catimageintro }}" style="width:100%;height:auto;" />
-<figcaption><a href="{{ $.Page.Params.catimagelink }}">{{ $.Page.Params.catimagetitle }}</a></figcaption>
-</figure>
-
-<h1>How did I drive?</h1>
-
-<p>Feel free to forward, share and link this newsletter. If nobody reads a newsletter, does it exist?</p>
-
-<strong>Contributors to this newsletter:</strong>
-<ul>
-	{{- range $dataJ.contributors }}
-	<li>
-		{{ .name }}&nbsp;
-		{{ with .web }}<a href="{{ . }}" class="icon">{{- partialCached "svg/home.svg" . -}}</a>&nbsp;{{ end }}
-		{{ with .github }}<a href="{{ . }}" class="icon">{{- partialCached "svg/github.svg" . -}}</a>&nbsp;{{ end }}
-		{{ with .gitlab }}<a href="{{ . }}" class="icon">{{- partialCached "svg/gitlab.svg" . -}}</a>&nbsp;{{ end }}
-	</li>
-	{{ end -}}
-</ul>
-
-<p>
-	You are aware, that you can participate in creating this monthly newsletter? Good. <a href="https://github.com/davidsneighbour/hugonewsletter.com">Check out our Github repository</a>. Each months issue (<a href="https://github.com/davidsneighbour/hugonewsletter.com/tree/master/content/2019/10">for example this one</a>) has several data files where you can add links and information for our lists. It's as easy as opening either an issue or a pull request. If you want to add full articles or sections then feel free to open pull requests on that months `index.md`. Let us know about bugs, display problems, your millenial angst via <a href="https://github.com/davidsneighbour/hugonewsletter.com/issues">issues</a>. What could possibly go wrong? This newsletter is open for everyone. Just do it. 
-</p>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 d-none d-md-block">
+                <ul class="sidenav pt-4 pr-4 border-right border-default">
+                    {{ $currentNode := . }}
+                    {{range .Site.Home.Sections.ByWeight}}
+                    <!-- not render any single page, like contact page. -->
+                    {{ $numberOfMainPages := len .Pages }}
+                    {{ if eq $numberOfMainPages 0 }}
+                    {{ else }}
+                    <!-- /not render any single page, like contact page. -->
+                    {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode}}
+                    {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <div class="px-lg-2 px-1 pt-5">
+                    <h2 class="mb-4 font-weight-medium">{{ .Title | safeHTML }}</h2>
+                    {{ partial "newsletter.html" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {{ end }}

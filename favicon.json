@@ -1,0 +1,70 @@
+{
+  "masterPicture": "TODO: Path to your master picture",
+  "iconsPath": "/images/favicon/",
+  "design": {
+    "ios": {
+      "pictureAspect": "noChange",
+      "assets": {
+        "ios6AndPriorIcons": true,
+        "ios7AndLaterIcons": true,
+        "precomposedIcons": true,
+        "declareOnlyDefaultIcon": true
+      },
+      "appName": "Hugo Newsletter"
+    },
+    "desktopBrowser": {
+      "design": "background",
+      "backgroundColor": "#ffffff",
+      "backgroundRadius": 0.05,
+      "imageScale": 0.9
+    },
+    "windows": {
+      "pictureAspect": "noChange",
+      "backgroundColor": "#ffc40d",
+      "onConflict": "override",
+      "assets": {
+        "windows80Ie10Tile": true,
+        "windows10Ie11EdgeTiles": {
+          "small": true,
+          "medium": true,
+          "big": true,
+          "rectangle": true
+        }
+      },
+      "appName": "Hugo Newsletter"
+    },
+    "androidChrome": {
+      "pictureAspect": "shadow",
+      "themeColor": "#ffffff",
+      "manifest": {
+        "name": "Hugo Newsletter",
+        "startUrl": "https://hugonewsletter.com",
+        "display": "standalone",
+        "orientation": "portrait",
+        "onConflict": "override",
+        "declared": true
+      },
+      "assets": {
+        "legacyIcon": true,
+        "lowResolutionIcons": true
+      }
+    },
+    "safariPinnedTab": {
+      "pictureAspect": "blackAndWhite",
+      "threshold": 92.1875,
+      "themeColor": "#ff4088"
+    }
+  },
+  "settings": {
+    "compression": 5,
+    "scalingAlgorithm": "Mitchell",
+    "errorOnImageTooSmall": false,
+    "readmeFile": true,
+    "htmlCodeFile": true,
+    "usePathAsIs": false
+  },
+  "versioning": {
+    "paramName": "v",
+    "paramValue": "wAMgQbggeY"
+  }
+}

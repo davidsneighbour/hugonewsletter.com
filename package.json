@@ -16,6 +16,7 @@
     "atomic-algolia": "0.3.17",
     "autoprefixer": "9.7.4",
     "bootstrap": "4.4.1",
+    "cli-real-favicon": "0.0.8",
     "cookieconsent": "3.1.1",
     "cz-conventional-changelog": "2.1.0",
     "cz-customizable": "6.2.0",
@@ -27,7 +28,10 @@
     "mjml": "4.6.2",
     "moment": "2.24.0",
     "popper.js": "1.16.1",
-    "postcss-cli": "7.1.0"
+    "postcss-cli": "7.1.0",
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "husky": "4.3.0"
   },
   "browserslist": [
     "> 1%",
@@ -44,17 +48,47 @@
       }
     ]
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "body-max-line-length": [
+        0,
+        "always",
+        100
+      ],
+      "type-enum": [
+        0,
+        "always",
+        [
+          "feat",
+          "fix",
+          "layouts",
+          "refactor",
+          "test",
+          "chore",
+          "wip",
+          "content"
+        ]
+      ]
+    }
+  },
   "devDependencies": {
     "cssnano": "4.1.10",
     "minimist": "1.2.5",
     "standard-version": "8.0.2"
   },
   "scripts": {
-    "start": "webpack --mode=development --watch",
-    "build": "webpack --mode=production",
-    "nightwatch": "nightwatch -c tests/nightwatch.conf.js",
     "release": "standard-version --release-as patch -a -t \"\" && git push --follow-tags origin master",
     "release-next": "standard-version --release-as minor -a -t \"\" && git push --follow-tags origin master",
-    "release-major": "standard-version --release-as major -a -t \"\" && git push --follow-tags origin master"
+    "release-major": "standard-version --release-as major -a -t \"\" && git push --follow-tags origin master",
+    "serve": "hugo server --minify --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose",
+    "commitlint": "commitlint --from=HEAD~1"
   }
 }
