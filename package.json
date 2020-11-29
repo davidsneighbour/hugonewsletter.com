@@ -75,6 +75,7 @@
     "cz-customizable": "6.3.0",
     "husky": "4.3.0",
     "postcss-cli": "8.3.0",
+    "postcss-preset-env": "^6.7.0",
     "standard-version": "9.0.0"
   }
 }
