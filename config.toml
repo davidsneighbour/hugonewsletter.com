@@ -117,3 +117,29 @@ content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br
 enable = false
 label = "Submit a ticket"
 link = "contact"
+
+[module]
+
+[[module.imports]]
+path = "github.com/davidsneighbour/dnb-hugo/favicon"
+
+[[module.imports]]
+path = "github.com/davidsneighbour/dnb-hugo/functions"
+
+[[module.imports]]
+path = "github.com/davidsneighbour/dnb-hugo/netlification"
+
+[[module.imports]]
+path = "github.com/davidsneighbour/dnb-hugo/robots"
+
+[[module.imports]]
+path = "github.com/davidsneighbour/dnb-hugo/shortcodes"
+
+[[module.imports]]
+path = "github.com/davidsneighbour/dnb-hugo/sitemap"
+
+[[module.imports]]
+path = "github.com/davidsneighbour/dnb-hugo-libs/bootstrap-icons"
+
+[[module.imports]]
+path = "github.com/davidsneighbour/dnb-hugo-libs/bootstrap4"
