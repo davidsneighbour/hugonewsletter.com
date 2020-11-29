@@ -60,9 +60,9 @@
     }
   },
   "scripts": {
-    "release": "standard-version --release-as patch -a -t \"\" && git push --follow-tags origin master",
-    "release-next": "standard-version --release-as minor -a -t \"\" && git push --follow-tags origin master",
-    "release-major": "standard-version --release-as major -a -t \"\" && git push --follow-tags origin master",
+    "release": "standard-version --release-as patch -a -t \"\" && git push --follow-tags origin main",
+    "release-next": "standard-version --release-as minor -a -t \"\" && git push --follow-tags origin main",
+    "release-major": "standard-version --release-as major -a -t \"\" && git push --follow-tags origin main",
     "serve": "hugo server --minify --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose",
     "commitlint": "commitlint --from=HEAD~1",
     "hugo-update": "hugo mod get -u ./... && hugo mod tidy",
