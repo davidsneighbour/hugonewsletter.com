@@ -3,7 +3,6 @@ title = "Hugo Newsletter"
 languageCode = "en-us"
 
 theme = ['hugo-debugprint', "godocs-hugo-2"]
-disableLanguages = ['fr']
 googleAnalytics = "UA-146893148-1"
 
 [outputs]
@@ -75,7 +74,7 @@ preloader = "images/logo.png" # use jpg, png, svg or gif format.
 
 # Navigation button bordered
 [params.navigation_button_bordered]
-enable = true
+enable = false
 label = "Changelog"
 link = "changelog"
 
@@ -83,7 +82,7 @@ link = "changelog"
 [params.navigation_button_solid]
 enable = true
 label = "Contact"
-link = "contact"
+link = "/contact"
 
 ############################# social site ########################
 [[params.social]]
