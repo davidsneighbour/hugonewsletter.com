@@ -12,27 +12,6 @@
     "url": "https://github.com/davidsneighbour/hugonewsletter.com/issues"
   },
   "homepage": "https://github.com/davidsneighbour/hugonewsletter.com",
-  "dependencies": {
-    "atomic-algolia": "0.3.17",
-    "autoprefixer": "9.7.4",
-    "bootstrap": "4.4.1",
-    "cli-real-favicon": "0.0.8",
-    "cookieconsent": "3.1.1",
-    "cz-conventional-changelog": "2.1.0",
-    "cz-customizable": "6.2.0",
-    "imagemin-cli": "5.1.0",
-    "imagemin-mozjpeg": "8.0.0",
-    "imagemin-pngquant": "8.0.0",
-    "instantsearch.js": "3.7.0",
-    "jquery": "3.5.0",
-    "mjml": "4.6.2",
-    "moment": "2.24.0",
-    "popper.js": "1.16.1",
-    "postcss-cli": "7.1.0",
-    "@commitlint/cli": "11.0.0",
-    "@commitlint/config-conventional": "11.0.0",
-    "husky": "4.3.0"
-  },
   "browserslist": [
     "> 1%",
     "last 2 version"
@@ -79,16 +58,22 @@
       ]
     }
   },
-  "devDependencies": {
-    "cssnano": "4.1.10",
-    "minimist": "1.2.5",
-    "standard-version": "8.0.2"
-  },
   "scripts": {
     "release": "standard-version --release-as patch -a -t \"\" && git push --follow-tags origin master",
     "release-next": "standard-version --release-as minor -a -t \"\" && git push --follow-tags origin master",
     "release-major": "standard-version --release-as major -a -t \"\" && git push --follow-tags origin master",
     "serve": "hugo server --minify --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose",
     "commitlint": "commitlint --from=HEAD~1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "11.0.0",
+    "@commitlint/config-conventional": "11.0.0",
+    "autoprefixer": "10.0.4",
+    "cssnano": "4.1.10",
+    "cz-conventional-changelog": "3.3.0",
+    "cz-customizable": "6.3.0",
+    "husky": "4.3.0",
+    "postcss-cli": "8.3.0",
+    "standard-version": "9.0.0"
   }
 }
