@@ -85,5 +85,6 @@
     "ignoreFiles": [
       "assets/scss/templates/*"
     ]
-  }
+  },
+  "private": true
 }
