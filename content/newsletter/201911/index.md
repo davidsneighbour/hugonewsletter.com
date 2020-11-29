@@ -1,6 +1,7 @@
 ---
 date: 2019-11-07
 title: Today is the second Monday in November and this is the second issue of the (inofficial) Hugo Newsletter.
+linkTitle: November 2019
 end: That's all for this month... have a great first Monday in November and rest of the month!<br/>Patrick
 url: /2019/11/
 catimagetitle: Photo by Sereja Ris on Unsplash

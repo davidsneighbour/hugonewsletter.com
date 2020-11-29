@@ -1,4 +1,3 @@
-{{ "<!-- details page -->" | safeHTML }}
 <section>
   <div class="container">
     <div class="row">
@@ -54,12 +53,20 @@
             {{ end }}
 
             {{with ($.Scratch.Get "prevPage")}}
-            <a class="nav nav-prev" href="{{.Permalink }}"><i class="ti-arrow-left mr-2"></i>
-              <span class="d-none d-md-block">{{.Title}}</span></a>
+              <a class="nav nav-prev" href="{{.Permalink }}">
+                <i class="ti-arrow-left mr-2"></i>
+                <span class="d-none d-md-block">
+                  {{ with .LinkTitle }}{{ . | markdownify }}{{ else }}{{ . | markdownify }}{{ end}}
+                </span>
+              </a>
             {{end}}
             {{with ($.Scratch.Get "nextPage")}}
-            <a class="nav nav-next" href="{{.Permalink }}"> <span class="d-none d-md-block">{{.Title}}</span><i
-                class="ti-arrow-right ml-2"></i></a>
+              <a class="nav nav-next" href="{{.Permalink }}">
+                <span class="d-none d-md-block">
+                  {{ with .LinkTitle }}{{ . | markdownify }}{{ else }}{{ .Title | markdownify }}{{ end}}
+                </span>
+                <i class="ti-arrow-right ml-2"></i>
+              </a>
             {{end}}
           </nav>
         </div>
@@ -67,9 +74,7 @@
     </div>
   </div>
 </section>
-{{ "<!-- /details page -->" | safeHTML }}
 
-<!-- templates -->
 {{ define "section-tree-nav" }}
 {{ $showvisitedlinks := .showvisitedlinks }}
 {{ $currentNode := .currentnode }}
@@ -81,7 +86,9 @@
 {{ with $currentNode.File }}{{ $currentNodeFileUniqueID = .UniqueID }}{{ end }}
 <li data-nav-id="{{.Permalink}}" title="{{.Title}}"
   class="sidelist {{if .IsAncestor $currentNode }}parent{{end}} {{if eq $fileUniqueID $currentNodeFileUniqueID}}active{{end}}">
-  <a href="{{.Permalink}}">{{.Title }}</a>
+  <a href="{{.Permalink}}">
+    {{ with .LinkTitle }}{{ . | markdownify }}{{ else }}{{ .Title | markdownify }}{{ end}}
+  </a>
   {{ $numberOfPages := (add (len .Pages) (len .Sections)) }}
   {{ if ne $numberOfPages 0 }}
   <ul>
@@ -101,7 +108,6 @@
 {{ end }}
 
 
-<!-- call to action -->
 {{ if .Site.Params.call_to_action.enable }}
 {{ with .Site.Params.call_to_action }}
 <section class="section">
