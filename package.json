@@ -13,8 +13,9 @@
   },
   "homepage": "https://github.com/davidsneighbour/hugonewsletter.com",
   "browserslist": [
-    "> 1%",
-    "last 2 version"
+    ">= 1%",
+    "last 2 major version",
+    "not dead"
   ],
   "standard-version": {
     "skip": {
