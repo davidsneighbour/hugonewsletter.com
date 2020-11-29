@@ -64,7 +64,14 @@
     "release-next": "standard-version --release-as minor -a -t \"\" && git push --follow-tags origin master",
     "release-major": "standard-version --release-as major -a -t \"\" && git push --follow-tags origin master",
     "serve": "hugo server --minify --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose",
-    "commitlint": "commitlint --from=HEAD~1"
+    "commitlint": "commitlint --from=HEAD~1",
+    "hugo-update": "hugo mod get -u ./... && hugo mod tidy",
+    "textlint": "textlint",
+    "textlint-fix": "textlint --fix",
+    "lint-md": "remark .",
+    "stylelint": "stylelint assets/scss/",
+    "stylelint2": "stylelint",
+    "stylelint-fix": "stylelint assets/scss/ --fix"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",

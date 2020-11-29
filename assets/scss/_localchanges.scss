@@ -30,20 +30,25 @@ p {
 
 }
 
+footer .navbar-brand img {
+  width: auto;
+  height: 64px;
+}
+
 .navigation {
+
   .navbar {
+
     padding-left: 0;
+
     img {
       width: auto;
       height: 50px;
       margin-top: -1.2rem;
     }
-  }
-}
 
-footer .navbar-brand img {
-  width: auto;
-  height: 64px;
+  }
+
 }
 
 .sidenav {
