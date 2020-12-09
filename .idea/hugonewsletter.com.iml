@@ -4,7 +4,5 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="dnb-hugo" />
-    <orderEntry type="module" module-name="dnb-hugo-libs" />
   </component>
 </module>
