@@ -1,0 +1,15 @@
+{
+  "connector": "local",
+  "extends": [
+    "development"
+  ],
+  "parsers": [
+    "babel-config",
+    "css",
+    "html",
+    "javascript",
+    "package-json",
+    "sass",
+    "webpack-config"
+  ],
+}
