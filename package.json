@@ -37,10 +37,12 @@
     "url": "git+https://github.com/dnb-hugo/hugonewsletter.com.git"
   },
   "scripts": {
-    "remark": "remark",
+    "build": "npm run build:hugo",
+    "build:hugo": "hugo --gc",
     "release": "standard-version --release-as patch -a -t \"\" && ./bin/release-hook-postrelease.sh",
     "release-major": "standard-version --release-as major -a -t \"\" && ./bin/release-hook-postrelease.sh",
     "release-next": "standard-version --release-as minor -a -t \"\" && ./bin/release-hook-postrelease.sh",
+    "remark": "remark",
     "serve": "hugo server --minify --disableFastRender --i18n-warnings --navigateToChanged  --templateMetrics --templateMetricsHints --verbose --verboseLog --path-warnings --buildDrafts --buildExpired --buildFuture --watch --enableGitInfo --forceSyncStatic --log true --logFile hugo.log --verbose",
     "stylelint": "stylelint assets/scss/",
     "stylelint-fix": "stylelint assets/scss/ --fix",

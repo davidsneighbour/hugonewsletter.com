@@ -1,14 +1,14 @@
-module davidsneighbour/hugonewsletter.com
+module dnb-hugo/hugonewsletter.com
 
 go 1.15
 
 require (
-	github.com/davidsneighbour/dnb-hugo-libs/bootstrap-icons v1.2.1 // indirect
-	github.com/davidsneighbour/dnb-hugo-libs/bootstrap4 v1.0.1 // indirect
-	github.com/davidsneighbour/dnb-hugo/favicon v1.0.2 // indirect
-	github.com/davidsneighbour/dnb-hugo/functions v1.0.0 // indirect
-	github.com/davidsneighbour/dnb-hugo/netlification v1.0.15 // indirect
-	github.com/davidsneighbour/dnb-hugo/robots v1.0.1 // indirect
-	github.com/davidsneighbour/dnb-hugo/shortcodes v1.0.9 // indirect
-	github.com/davidsneighbour/dnb-hugo/sitemap v1.0.1 // indirect
+	github.com/dnb-hugo/libraries/bootstrap-icons v1.2.1 // indirect
+	github.com/dnb-hugo/libraries/bootstrap5 v1.0.1 // indirect
+	github.com/dnb-hugo/components/favicon v1.0.2 // indirect
+	github.com/dnb-hugo/components/functions v1.0.0 // indirect
+	github.com/dnb-hugo/components/netlification v1.0.15 // indirect
+	github.com/dnb-hugo/components/robots v1.0.1 // indirect
+	github.com/dnb-hugo/components/shortcodes v1.0.9 // indirect
+	github.com/dnb-hugo/components/sitemap v1.0.1 // indirect
 )

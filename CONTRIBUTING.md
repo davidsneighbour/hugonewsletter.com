@@ -11,7 +11,7 @@ When you come across something interesting for the newsletter, you can let us kn
 
 - Tweet [@HugoNewsletter](https://twitter.com/HugoNewsletter) on Twitter.
 - Send Patrick a DM on [the Hugo forum](https://discourse.gohugo.io/u/davidsneighbour).
-- [Open a Github issue](https://github.com/davidsneighbour/hugonewsletter.com/issues/new).
+- [Open a Github issue](https://github.com/dnb-hugo/hugonewsletter.com/issues/new).
 
 We are working on automating the creation of the newsletter, so if you want to add a specific entry to the newsletter feel free to create a `myentryname.md` inside of the `content/yyyy/mm` folder. I will create folders for the future newsletters in advanced time.
 

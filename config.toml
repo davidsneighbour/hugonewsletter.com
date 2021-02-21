@@ -93,7 +93,7 @@ link = "https://twitter.com/hugonewsletter"
 [[params.social]]
 title = "github"
 icon = "ti-github"
-link = "https://github.com/davidsneighbour/hugonewsletter.com/"
+link = "https://github.com/dnb-hugo/hugonewsletter.com/"
 
 ################################### English language #####################################
 [Languages.en]
