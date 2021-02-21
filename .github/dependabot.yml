@@ -4,19 +4,17 @@
 version: 2
 updates:
 
-  # managing dependencies for node/npm
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
-      time: "07:00"
+      time: "18:00"
       timezone: "Asia/Bangkok"
-    allow:
-      - dependency-type: "production"
-      - dependency-type: "development"
     assignees:
       - "davidsneighbour"
     reviewers:
       - "davidsneighbour"
     target-branch: "main"
     open-pull-requests-limit: 999
+    pull-request-branch-name:
+      separator: "/"
