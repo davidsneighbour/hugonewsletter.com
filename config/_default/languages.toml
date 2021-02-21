@@ -1,0 +1,21 @@
+################################### English language #####################################
+[en]
+languageName = "En"
+languageCode = "en-us"
+weight = 1
+home = "Home"
+# copyright
+copyright = "Copyright &copy; 2020 a hugo theme by [themefisher](https://themefisher.com)"
+
+# call to action
+[en.call_to_action]
+enable = false
+title = "Still Didn't Find Your Answer?"
+image = "images/cta-illustration.jpg"
+content = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam <br> nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+
+# call to action button
+[en.call_to_action.button]
+enable = false
+label = "Submit a ticket"
+link = "contact"

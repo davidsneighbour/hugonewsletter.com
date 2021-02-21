@@ -1,0 +1,38 @@
+[[imports]]
+path = "github.com/dnb-hugo/components/functions"
+
+[[imports]]
+path = "github.com/dnb-hugo/components/netlification"
+
+[[imports]]
+path = "github.com/dnb-hugo/components/opensearch"
+
+[[imports]]
+path = "github.com/dnb-hugo/components/pwa"
+
+[[imports]]
+path = "github.com/dnb-hugo/components/renderhooks"
+
+[[imports]]
+path = "github.com/dnb-hugo/components/robots"
+
+[[imports]]
+path = "github.com/dnb-hugo/components/search-algolia"
+
+[[imports]]
+path = "github.com/dnb-hugo/components/sitemap"
+
+[[imports]]
+path = "github.com/dnb-hugo/components/social"
+
+[[imports]]
+path = "github.com/dnb-hugo/debugprint"
+
+[[imports]]
+path = "github.com/dnb-hugo/libraries/bootstrap-icons"
+
+[[imports]]
+path = "github.com/dnb-hugo/libraries/bootstrap5"
+
+[[imports]]
+path = "github.com/dnb-hugo/shortcodes"

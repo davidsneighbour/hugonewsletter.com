@@ -1,0 +1,6 @@
+baseurl = "https://HugoNewsletter.com/"
+title = "Hugo Newsletter"
+languageCode = "en-us"
+
+theme = ["godocs-hugo"]
+googleAnalytics = "UA-146893148-1"
