@@ -1,5 +1,3 @@
-github.com/dnb-hugo/components v0.0.0-20210220144240-2c7a64742b13 h1:LOsEe1ZN4C0gGXSWnX4+Dt1X4T1amc2EDaGsFeTJGWs=
-github.com/dnb-hugo/components/functions v1.0.11/go.mod h1:D1wuewBIRi/K+JS40raRu4iPYReMNYguOF/vXJ7Jv2c=
 github.com/dnb-hugo/components/functions v1.0.17 h1:W913rHJlR6N2vVnhS+v9GJnPu7YNYqvym24h4IXyF4E=
 github.com/dnb-hugo/components/functions v1.0.17/go.mod h1:D1wuewBIRi/K+JS40raRu4iPYReMNYguOF/vXJ7Jv2c=
 github.com/dnb-hugo/components/netlification v1.1.8 h1:eARmBWDHS3q0Huesm/VU25U4+JOstfzLlTSiuhJYpw4=
@@ -20,7 +18,6 @@ github.com/dnb-hugo/components/social v0.0.4 h1:dPv9UeKY+fwZ/PBp3eTp/SMoxSF31bTS
 github.com/dnb-hugo/components/social v0.0.4/go.mod h1:JhfsOeIFw1pQCOrPq7iz/kZh4/b3MIT/CC9R56yE+gs=
 github.com/dnb-hugo/debugprint v1.0.7 h1:4vwpai0T7Y9rH5ZPUwvUN0rnBi6Ktk/QWCmNNcn8/nU=
 github.com/dnb-hugo/debugprint v1.0.7/go.mod h1:YMvTiP34ADcKHOtCpjeIuzfDyXrh0mSKvfjVt/WXpLM=
-github.com/dnb-hugo/libraries v1.0.6 h1:lv2vSCF5ark+oiWeuxXL1FtCLPbofwnvBKXuFGWOWPM=
 github.com/dnb-hugo/libraries/bootstrap-icons v1.3.3 h1:78ZmM2gWs7JbT8gUs1WawYN8i7EwkfHMm68Zl5I9Nfw=
 github.com/dnb-hugo/libraries/bootstrap-icons v1.3.3/go.mod h1:sgKUgwtMNDl9TEalhSHlD6hKoMIsQq/Eps8rDV1Sd28=
 github.com/dnb-hugo/libraries/bootstrap5 v1.3.1 h1:I1DZ2zSU2aGOLkqQJQDuW8J5vZDC8jqPaGJ8xZ8oxmk=
