@@ -1,6 +1,7 @@
 ---
 title: "CSP vs Hugo Highlighting"
 date: 2021-02-25T01:08:49+07:00
+draft: true
 description: "This is meta description"
 ---
 

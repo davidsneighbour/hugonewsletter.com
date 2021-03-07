@@ -1,6 +1,7 @@
 ---
 title: "Analysing Collections"
 date: 2021-03-07T06:18:13+07:00
+draft: true
 description: "This is meta description"
 ---
 
