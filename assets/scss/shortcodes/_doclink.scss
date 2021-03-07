@@ -1,8 +1,22 @@
 .doclink {
-  background-color: #fbfbfb;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-  text-align: right;
-  border-top: 1px solid #dddddd;
+
+  @extend .border-top;
+  @extend .border-dark;
+  @extend .bg-light;
+  @extend .bg-gradient;
+  @extend .p-3;
+  @extend .text-end;
+  @extend .mb-3;
+
+  a {
+    img {
+      height: 1rem;
+      @extend .align-text-top;
+    }
+
+    svg {
+      @extend .ms-1;
+      @extend .align-text-bottom;
+    }
+  }
 }

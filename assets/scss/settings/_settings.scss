@@ -1,7 +1,24 @@
+// Global Settings
+$enable-caret:                true;
+$enable-rounded:              false;
+$enable-shadows:              false;
+$enable-gradients:            true;
+$enable-transitions:          true;
+$enable-reduced-motion:       false;
+$enable-smooth-scroll:        true;
+$enable-grid-classes:         true;
+$enable-button-pointers:      true;
+$enable-rfs:                  false;
+$enable-validation-icons:     true;
+$enable-negative-margins:     false;
+$enable-deprecation-messages: true;
+$enable-important-utilities:  true;
+
 // Font Variables
 $primary-font: 'Montserrat', sans-serif;
 $icon-font: 'themify';
 
+// The Grid...
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -17,3 +34,6 @@ $container-max-widths: (
   //xl: 1140px,
   //xxl: 1320px
 );
+
+// Links
+$link-decoration: none;

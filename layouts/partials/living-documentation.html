@@ -1,0 +1,21 @@
+<div id="is--github-info">
+  <h3>Last Changes</h3>
+  <p>
+    This page is part of a living documentation. It might change depending on gained experience, changes in Hugo or with
+    additional samples and details. Bookmark this page to come back later.
+  </p>
+  <p>
+    <a href="{{ .Permalink }}">{{ .Title }}</a> was last updated on {{ .Lastmod.Format "January 2, 2006" }}.
+  </p>
+  <p>
+    <a href="https://github.com/dnb-hugo/hugonewsletter.com/edit/master/content/{{.File.Path}}">
+      {{ partialCached "bsicon" "github" "github" }}&nbsp;
+      Improve this page on Github
+    </a>
+  </p>
+</div>
+
+{{/*:
+ https://gohugo.io/variables/git/
+ {{ .GitInfo.Subject }} ({{ .GitInfo.AbbreviatedHash }})
+*/}}

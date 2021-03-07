@@ -1,0 +1,41 @@
+section {
+  main {
+    @extend .mb-5;
+  }
+}
+
+article {
+
+  header {
+    @extend .mt-5;
+    h2 {
+      @extend .border-bottom;
+      @extend .border-primary;
+    }
+
+    p {
+      @extend .text-end;
+    }
+  }
+
+}
+
+#is--github-info {
+  @extend .alert;
+  @extend .alert-info;
+  @extend .mt-5;
+  @extend .border-top;
+  @extend .border-dark;
+
+  h3 {
+    color: $primary;
+  }
+
+  svg {
+    @extend .align-text-top;
+  }
+
+  p:last-of-type {
+    @extend .mb-0;
+  }
+}

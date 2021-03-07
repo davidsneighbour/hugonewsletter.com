@@ -1,9 +1,11 @@
-
+{{- $url := .Get "url" -}}
+{{- $function := .Get "function" -}}
 <div class="doclink">
-  <a href="{{ .Get "url" }}">
-    Official
-    <img src="/images/logos/hugo-logo-wide.svg" style="height: 1rem;vertical-align: text-top" alt="Hugo Logo" />
+  <a href="{{- $url -}}">
+    Read the official
+    <img src="/images/logos/hugo-logo-wide.svg" alt="Hugo Logo" />
     documentation
-    {{ with .Get "function" }} for <code>{{ . }}</code>{{ end }}
+    {{- with $function -}}&nbsp;for <code>{{- . -}}</code>{{- end -}}
+    {{- partialCached "bsicon" "chevron-right" "chevron-right" -}}
   </a>
 </div>

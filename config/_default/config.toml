@@ -5,7 +5,7 @@ disableKinds = []
 enableEmoji = true                        # see https://www.webfx.com/tools/emoji-cheat-sheet/
 # dev: check https://discourse.gohugo.io/t/differing-pages-between-dev-and-production/28270
 #    before enabling this.
-enableGitInfo = false                     # Enable GitInfo feature
+enableGitInfo = true                     # Enable GitInfo feature
 enableRobotsTXT = true                    # Build robots.txt file
 footnoteAnchorPrefix = "#"
 footnoteReturnLinkContents = "^"

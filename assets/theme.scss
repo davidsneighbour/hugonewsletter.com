@@ -1,15 +1,14 @@
-// Configuration
-@import "libs/bootstrap/scss/functions";
-@import "libs/bootstrap/scss/variables";
-@import "libs/bootstrap/scss/mixins";
-@import "libs/bootstrap/scss/utilities";
-
 // DNB theme setup
 
 @import "scss/settings/colors";
 @import "scss/settings/fonts";
 @import "scss/settings/settings";
-@import 'scss/settings/mixins';
+
+// Configuration
+@import "libs/bootstrap/scss/functions";
+@import "libs/bootstrap/scss/variables";
+@import "libs/bootstrap/scss/mixins";
+@import "libs/bootstrap/scss/utilities";
 
 // Bootstrap
 @import "libs/bootstrap/scss/root";
@@ -53,8 +52,6 @@
 @import 'scss/components/40-main';
 @import 'scss/components/50-icons';
 @import 'scss/components/60-footer';
+@import 'scss/sections/content';
 @import 'scss/sections/newsletter';
 @import 'scss/shortcodes/doclink';
-
-// Plugins
-@import 'scss/plugins/auto-complete';
