@@ -1,0 +1,3 @@
+noJSConfigInAssets = false
+useResourceCacheWhen = "fallback"
+writeStats = true

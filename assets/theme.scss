@@ -1,0 +1,60 @@
+// Configuration
+@import "libs/bootstrap/scss/functions";
+@import "libs/bootstrap/scss/variables";
+@import "libs/bootstrap/scss/mixins";
+@import "libs/bootstrap/scss/utilities";
+
+// DNB theme setup
+
+@import "scss/settings/colors";
+@import "scss/settings/fonts";
+@import "scss/settings/settings";
+@import 'scss/settings/mixins';
+
+// Bootstrap
+@import "libs/bootstrap/scss/root";
+@import "libs/bootstrap/scss/reboot";
+@import "libs/bootstrap/scss/type";
+@import "libs/bootstrap/scss/images";
+@import "libs/bootstrap/scss/containers";
+@import "libs/bootstrap/scss/grid";
+@import "libs/bootstrap/scss/tables";
+@import "libs/bootstrap/scss/forms";
+@import "libs/bootstrap/scss/buttons";
+@import "libs/bootstrap/scss/transitions";
+@import "libs/bootstrap/scss/dropdown";
+//@import "libs/bootstrap/scss/button-group";
+@import "libs/bootstrap/scss/nav";
+@import "libs/bootstrap/scss/navbar";
+@import "libs/bootstrap/scss/card";
+//@import "libs/bootstrap/scss/accordion";
+//@import "libs/bootstrap/scss/breadcrumb";
+@import "libs/bootstrap/scss/pagination";
+//@import "libs/bootstrap/scss/badge";
+@import "libs/bootstrap/scss/alert";
+//@import "libs/bootstrap/scss/progress";
+@import "libs/bootstrap/scss/list-group";
+//@import "libs/bootstrap/scss/close";
+//@import "libs/bootstrap/scss/toasts";
+//@import "libs/bootstrap/scss/modal";
+//@import "libs/bootstrap/scss/tooltip";
+//@import "libs/bootstrap/scss/popover";
+@import "libs/bootstrap/scss/carousel";
+//@import "libs/bootstrap/scss/spinners";
+
+// Helpers & Utilities
+@import "libs/bootstrap/scss/helpers";
+@import "libs/bootstrap/scss/utilities/api";
+
+// Theme Styles
+@import 'scss/components/10-global';
+@import 'scss/components/20-sidebar';
+@import 'scss/components/30-navigation';
+@import 'scss/components/40-main';
+@import 'scss/components/50-icons';
+@import 'scss/components/60-footer';
+@import 'scss/sections/newsletter';
+@import 'scss/shortcodes/doclink';
+
+// Plugins
+@import 'scss/plugins/auto-complete';

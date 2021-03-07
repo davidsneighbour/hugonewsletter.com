@@ -1,0 +1,76 @@
+/* sidenav */
+.sidenav {
+  position: sticky;
+  top: 95px;
+
+  padding-right: 1rem;
+  padding-left: 0;
+
+  ul {
+    padding-left: 10px;
+  }
+
+  & > li {
+    a {
+      font-size: 18px;
+      font-weight: 500;
+      display: block;
+      padding: 20px 0;
+      color: $gray-900;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $border-color;
+    }
+  }
+
+  .sidelist {
+    ul {
+      display: none;
+    }
+  }
+
+  .parent {
+    & > a {
+      position: relative;
+      margin-left: 10px;
+      color: $primary !important;
+
+      &::before {
+        position: absolute;
+        top: 25%;
+        left: -10px;
+        width: 1px;
+        height: 50%;
+        content: '';
+        background: $primary;
+      }
+    }
+
+    ul {
+      display: block;
+      margin-bottom: 10px;
+
+      a {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 5px 0;
+        color: $gray-900;
+      }
+
+      li.active > a {
+        margin-left: 10px;
+
+        &::before {
+          top: 13px;
+          display: block;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+/* /sidenav */

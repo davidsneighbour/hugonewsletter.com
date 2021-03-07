@@ -1,0 +1,42 @@
+################################################################################
+# Imaging setup
+## [imaging]
+################################################################################
+# see
+# https://gohugo.io/content-management/image-processing/#image-processing-config
+################################################################################
+# Default resample filter used for resizing. Default is Box,
+# a simple and fast averaging filter appropriate for downscaling.
+# See
+# https://github.com/disintegration/imaging
+################################################################################
+resampleFilter = "lanczos"
+# Default JPEG quality setting. Default is 75.
+quality = 90
+# Anchor used when cropping pictures.
+# Default is "smart" which does Smart Cropping, using
+# https://github.com/muesli/smartcrop Smart Cropping is content aware and tries
+# to find the best crop for each image. Valid values are Smart, Center, TopLeft,
+# Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+anchor = "smart"
+# Default background color.
+# Hugo will preserve transparency for target formats that supports it,
+# but will fall back to this color for JPEG.
+# Expects a standard HEX color string with 3 or 6 digits.
+# See https://www.google.com/search?q=color+picker
+bgColor = "#ffffff"
+
+[exif]
+# Regexp matching the fields you want to Exclude from the (massive) set of Exif info
+# available. As we cache this info to disk, this is for performance and
+# disk space reasons more than anything.
+# If you want it all, put ".*" in this config setting.
+# Note that if neither this or ExcludeFields is set, Hugo will return a small
+# default set.
+includeFields = ""
+# Hugo extracts the "photo taken" date/time into .Date by default.
+# Set this to true to turn it off.
+disableDate = true
+# Hugo extracts the "photo taken where" (GPS latitude and longitude) into
+# .Long and .Lat. Set this to true to turn it off.
+disableLatLong = true

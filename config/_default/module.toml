@@ -1,4 +1,7 @@
 [[imports]]
+path = "github.com/dnb-hugo/blocks/bootstrap5"
+
+[[imports]]
 path = "github.com/dnb-hugo/components/functions"
 
 [[imports]]
@@ -29,10 +32,10 @@ path = "github.com/dnb-hugo/components/social"
 path = "github.com/dnb-hugo/debugprint"
 
 [[imports]]
-path = "github.com/dnb-hugo/libraries/bootstrap-icons"
+path = "github.com/dnb-hugo/libraries/bootstrap5"
 
 [[imports]]
-path = "github.com/dnb-hugo/libraries/bootstrap5"
+path = "github.com/dnb-hugo/libraries/bootstrap-icons"
 
 [[imports]]
 path = "github.com/dnb-hugo/shortcodes"

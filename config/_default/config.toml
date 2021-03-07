@@ -1,6 +1,34 @@
 baseurl = "https://HugoNewsletter.com/"
-title = "Hugo Newsletter"
-languageCode = "en-us"
-
-theme = ["godocs-hugo"]
+defaultContentLanguage = "en"
+disableHugoGeneratorInject = true         # we do that proudly on each page in the footer. visible.
+disableKinds = []
+enableEmoji = true                        # see https://www.webfx.com/tools/emoji-cheat-sheet/
+# dev: check https://discourse.gohugo.io/t/differing-pages-between-dev-and-production/28270
+#    before enabling this.
+enableGitInfo = false                     # Enable GitInfo feature
+enableRobotsTXT = true                    # Build robots.txt file
+footnoteAnchorPrefix = "#"
+footnoteReturnLinkContents = "^"
 googleAnalytics = "UA-146893148-1"
+languageCode = "en=gb"
+languageName = "English"
+logFile = "hugo.log"
+paginate = 5                              # default 5 items per page
+#paginatePath = "seite"
+pluralizelisttitles = false
+relativeURLs = true                       # makes all relative urls absolute to root... yeah, don't ask. we won't tell...
+refLinksErrorLevel = "WARNING"
+refLinksNotFoundURL = "/404.html"
+rssLimit = 10
+summaryLength = 150                       # the length of text to show in a .Summary
+title = "Hugo Newsletter"
+verbose = false
+verboseLog = true
+
+################################################################################
+# Bugfixes and Troubleshooting
+################################################################################
+# workaround for a weird time out error on netlify
+# "Error building site: $FILENAME: timed out initializing value. This is most
+# likely a circular loop in a shortcode"
+timeout = "30000"

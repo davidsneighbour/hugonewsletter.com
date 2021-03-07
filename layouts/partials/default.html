@@ -1,8 +1,7 @@
-<section>
-  <div class="container">
+  <div class="container-lg">
     <div class="row">
       <div class="col-lg-3 col-md-4 d-none d-md-block">
-        <ul class="sidenav pt-4 pr-4 border-right border-default">
+        <ul class="sidenav pt-4 pr-4 border-end border-default">
           {{ $currentNode := . }}
           {{range .Site.Home.Sections.ByWeight}}
           <!-- not render any single page, like contact page. -->
@@ -15,8 +14,8 @@
           {{ end }}
         </ul>
       </div>
-      <div class="col-md-8">
-        <div class="px-lg-2 px-1 pt-5">
+      <div class="col-lg-9 col-md-8">
+
           <h2 class="mb-4 font-weight-medium">{{ .Title | safeHTML }}</h2>
           {{ if .Content }}
           <div class="content">{{.Content}}</div>
@@ -25,6 +24,7 @@
             {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
           </div>
           {{ end }}
+
           <nav class="pagination">
             <!-- Next prev page -->
             {{ $currentNode := . }}
@@ -69,11 +69,10 @@
               </a>
             {{end}}
           </nav>
-        </div>
       </div>
     </div>
   </div>
-</section>
+
 
 {{ define "section-tree-nav" }}
 {{ $showvisitedlinks := .showvisitedlinks }}
@@ -94,40 +93,15 @@
   <ul>
     {{ $currentNode.Scratch.Set "pages" .Pages }}
     {{ if .Sections}}
-    {{ $currentNode.Scratch.Set "pages" (.Pages | union .Sections) }}
+      {{ $currentNode.Scratch.Set "pages" (.Pages | union .Sections) }}
     {{end}}
     {{ $pages := ($currentNode.Scratch.Get "pages") }}
 
     {{ range $pages.ByWeight }}
-    {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
+      {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode }}
     {{end}}
   </ul>
 </li>
 {{ end }}
 {{ end }}
 {{ end }}
-
-
-{{ if .Site.Params.call_to_action.enable }}
-{{ with .Site.Params.call_to_action }}
-<section class="section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-4 text-center d-lg-block d-none">
-        <img src="{{ .image| absURL }}" class="img-fluid" alt="">
-      </div>
-      <div class="col-lg-8 text-lg-left text-center">
-        <h2 class="mb-3">{{ .title | markdownify }}</h2>
-        <p>{{ .content | markdownify }}</p>
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link | absLangURL }}" class="btn btn-primary">{{ .label }}</a>
-        {{ end }}
-        {{ end }}
-      </div>
-    </div>
-  </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /call to action -->

@@ -1,0 +1,7 @@
+.navbar {
+  h1 {
+    @extend .navbar-brand;
+    @extend .m-0;
+    @extend .me-5;
+  }
+}

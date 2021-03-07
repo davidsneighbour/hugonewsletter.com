@@ -1,15 +1,22 @@
 <head>
   <meta charset="utf-8">
-  <title>{{ .Title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Title | plainify }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-  {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-  {{ hugo.Generator }}
-  {{ range .Site.Params.plugins.css }}
-  <link rel="stylesheet" href="{{ .link | absURL }}">
-  {{ end }}
-  {{ $styles := resources.Get "scss/style.scss" | toCSS }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
-  <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
-  <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+  {{ with site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
+  {{- with partialCached "func/getStylesheet.html" . $.Lang -}}
+    <link rel="stylesheet"
+          href="{{ .Permalink }}"
+          media="print"
+          onload="this.media='all'; this.onload=null;"
+          integrity="{{ .Data.Integrity | html }}">
+    <noscript>
+      <link
+              rel="stylesheet"
+              media="all"
+              href="{{ .Permalink }}"
+              integrity="{{ .Data.Integrity | html }}">
+    </noscript>
+  {{- end -}}
 </head>

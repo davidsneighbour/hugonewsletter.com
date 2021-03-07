@@ -1,0 +1,8 @@
+<h1>
+  <a href="/">
+    {{ if .Site.Params.logo }}
+      <img class="img-fluid" src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}">
+    {{ end }}
+    {{ .Site.Title }}
+  </a>
+</h1>

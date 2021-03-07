@@ -1,0 +1,15 @@
+################################################################################
+# Author setup
+## [author]
+################################################################################
+name = "Patrick Kollitsch"
+homepage = "https://samui-samui.de/"
+
+content = "sitewide/authorfooter/index.md"
+
+#[photo]
+#name = "patrick.kollitsch.jpg"
+#title = "Der Autor in seiner natürlichen Umgebung"
+
+#[format]
+#layout = "card"

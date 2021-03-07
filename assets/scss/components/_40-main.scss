@@ -1,0 +1,211 @@
+.social-icons {
+  margin-bottom: 0;
+
+  a {
+    display: block;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    text-align: center;
+    color: $white;
+    background: $primary;
+    border-radius: 6px;
+  }
+}
+
+.footer-menu {
+  margin-bottom: 0;
+
+  a {
+    display: block;
+    padding: 10px;
+    color: $gray-900;
+    transition: .2s ease;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+
+
+
+.page-list {
+  list-style-type: none;
+
+  a {
+    display: none;
+  }
+
+  ul {
+    padding: 0;
+
+    a {
+      display: inline-block;
+      padding: 7px 0;
+      font-size: 20px;
+    }
+  }
+}
+
+.pagination {
+  margin-top: 50px;
+  justify-content: space-between;
+
+  a {
+    color: $primary;    font-size: 18px;
+    font-weight: 500;
+  }
+
+  i {
+    line-height: 1.6;
+  }
+}
+
+// code-tab
+.code-tabs {
+  border: 1px solid $border-color;
+  overflow: hidden;
+  margin-bottom: 20px;
+
+  .nav-tabs {
+    margin-bottom: 0;
+
+    .nav-item {
+      padding-left: 0;
+      border-right: 1px solid $border-color;
+
+      .nav-link {
+        text-decoration: none;
+        font-weight: 500;
+        border: 0;
+      }
+
+      &::before {
+        display: none;
+      }
+
+      &.active {
+        background: $primary;
+
+        .nav-link {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 20px 15px;
+  }
+}
+
+
+
+// copy to clipboard
+
+pre {
+  position: relative;
+
+  .copy-to-clipboard {
+    background: $primary;
+    color: $white;
+    cursor: pointer;
+    padding: 4px 5px;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+:not(pre)>code+span.copy-to-clipboard {
+  display: none;
+}
+
+
+// autocomplete
+.autocomplete-suggestions {
+  border: 0;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0px 50px 60px rgba(62, 62, 62, 0.102) !important;
+  background: $white;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+
+    &-track {
+      background: $light;
+    }
+
+    &-thumb {
+      background: $border-color;
+    }
+  }
+
+  .autocomplete-suggestion {
+    transition: .2s ease;
+    padding: 10px;
+    font-weight: 500;
+
+    &.selected {
+      background: $primary;
+    }
+  }
+}
+
+.form-group {
+  label {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .form-control {
+    height: 40px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid $border-color;
+    border-radius: 0;
+    padding: 10px 0;
+
+    &::placeholder {
+      font-size: 13px;
+      color: $gray-900;
+    }
+
+    &:focus {
+      outline: 0;
+      border-color: $primary;
+      box-shadow: none;
+    }
+  }
+
+  .custom-select {
+    font-size: 13px;
+    color: $gray-900;
+  }
+
+  textarea.form-control {
+    height: 100px;
+  }
+}
+
+.collapse-wrapper {
+  padding: 5px 15px;
+
+  .collapse-head {
+    text-decoration: none;
+    color: $gray-100;
+    font-size: 18px;
+    font-weight: 500;
+    align-items: center;
+  }
+}
+
+:not(.highlight) pre {
+  background: $light;
+}
