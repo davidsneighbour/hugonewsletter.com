@@ -1,0 +1,9 @@
+
+<div class="doclink">
+  <a href="{{ .Get "url" }}">
+    Official
+    <img src="/images/logos/hugo-logo-wide.svg" style="height: 1rem;vertical-align: text-top" alt="Hugo Logo" />
+    documentation
+    {{ with .Get "function" }} for <code>{{ . }}</code>{{ end }}
+  </a>
+</div>
