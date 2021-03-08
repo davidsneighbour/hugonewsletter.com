@@ -1,3 +1,40 @@
+#content {
+  @extend .container-lg;
+
+  main {
+    aside {
+      @extend .pe-0;
+      @extend .col-lg-3;
+      @extend .col-md-4;
+      @extend .d-none;
+      @extend .d-md-block;
+      @extend .border-end;
+      @extend .border-primary;
+
+      ul {
+
+        @extend .pt-4;
+
+        @extend .list-inline;
+
+        ul {
+          @extend .list-inline;
+          @extend .ms-3;
+        }
+
+      }
+
+    }
+
+    article {
+
+      @extend .col-lg-9;
+      @extend .col-md-8;
+    }
+  }
+
+}
+
 .page-list {
   list-style-type: none;
 
@@ -9,20 +46,21 @@
     padding: 0;
 
     a {
+      font-size: 20px;
       display: inline-block;
       padding: 7px 0;
-      font-size: 20px;
     }
   }
 }
 
 .pagination {
-  margin-top: 50px;
   justify-content: space-between;
+  margin-top: 50px;
 
   a {
-    color: $primary;    font-size: 18px;
+    font-size: 18px;
     font-weight: 500;
+    color: $primary;
   }
 
   i {
@@ -32,9 +70,9 @@
 
 // code-tab
 .code-tabs {
-  border: 1px solid $border-color;
   overflow: hidden;
   margin-bottom: 20px;
+  border: 1px solid $border-color;
 
   .nav-tabs {
     margin-bottom: 0;
@@ -44,8 +82,8 @@
       border-right: 1px solid $border-color;
 
       .nav-link {
-        text-decoration: none;
         font-weight: 500;
+        text-decoration: none;
         border: 0;
       }
 

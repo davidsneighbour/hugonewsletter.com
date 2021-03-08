@@ -1,7 +1,7 @@
-<section class="container-lg">
+<section id="content">
   <main class="row">
-    <aside class="col-lg-3 col-md-4 d-none d-md-block">
-      <ul class="sidenav pt-4 pr-4 border-end border-default">
+    <aside>
+      <ul>
         {{ $currentNode := . }}
         {{range .Site.Home.Sections.ByWeight}}
           <!-- not render any single page, like contact page. -->
@@ -14,7 +14,7 @@
         {{ end }}
       </ul>
     </aside>
-    <article class="col-lg-9 col-md-8">
+    <article>
 
       <header>
         <h1>{{ .Title | safeHTML }}</h1>
