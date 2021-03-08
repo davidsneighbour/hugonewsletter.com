@@ -1,0 +1,45 @@
+#site-header {
+
+  @extend .navbar;
+  @extend .navbar-expand-lg;
+  @extend .sticky-top;
+  @extend .bg-light;
+
+  header {
+    @extend .container-lg;
+    @extend .justify-content-between;
+
+    h1 {
+      @extend .navbar-brand;
+      @extend .m-0;
+      @extend .me-5;
+
+      img {
+        @extend .img-fluid;
+      }
+    }
+
+    section {
+      button {
+        @extend .navbar-toggler;
+        span {
+          @extend .navbar-toggler-icon;
+        }
+      }
+      nav {
+        @extend .collapse;
+        @extend .navbar-collapse;
+
+        ul {
+          @extend .navbar-nav;
+          li {
+            @extend .nav-item;
+            a {
+              @extend .nav-link;
+            }
+          }
+        }
+      }
+    }
+  }
+}

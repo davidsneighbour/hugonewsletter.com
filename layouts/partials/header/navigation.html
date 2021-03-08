@@ -1,17 +1,17 @@
-<nav>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<section>
+  <button type="button" data-bs-toggle="collapse" data-bs-target="#topnavigation" aria-controls="topnavigation" aria-expanded="false" aria-label="Toggle navigation">
+    <span></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Params.Home }}</a>
+  <nav>
+    <ul>
+      <li>
+        <a href="{{ .Site.BaseURL | relLangURL }}">{{ .Site.Params.Home }}</a>
       </li>
       {{ range .Site.Menus.main }}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+        <li>
+          <a href="{{ .URL | absURL }}">{{ .Name }}</a>
         </li>
       {{ end }}
     </ul>
-  </div>
-</nav>
+  </nav>
+</section>
