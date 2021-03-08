@@ -49,6 +49,9 @@
     "stylelint-fix": "stylelint assets/scss/ --fix",
     "stylelint2": "stylelint",
     "textlint": "textlint",
-    "textlint-fix": "textlint --fix"
+    "textlint-fix": "textlint --fix",
+
+
+    "create-code-styles": "hugo gen chromastyles --style=monokai > assets/scss/plugins/_highlight.scss"
   }
 }

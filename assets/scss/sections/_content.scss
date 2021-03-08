@@ -8,7 +8,7 @@ article {
 
   header {
     @extend .mt-5;
-    h2 {
+    h1 {
       @extend .border-bottom;
       @extend .border-primary;
     }
@@ -16,6 +16,10 @@ article {
     p {
       @extend .text-end;
     }
+  }
+
+  h2 {
+    @extend .mt-5; 
   }
 
 }

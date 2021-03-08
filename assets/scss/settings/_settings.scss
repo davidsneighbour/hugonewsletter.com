@@ -17,6 +17,9 @@ $enable-important-utilities:  true;
 // Font Variables
 $primary-font: 'Montserrat', sans-serif;
 $icon-font: 'themify';
+$font-size-base:              1rem;
+$h1-font-size:                $font-size-base * 2;
+$h2-font-size:                $font-size-base * 1.8;
 
 // The Grid...
 $grid-breakpoints: (

@@ -1,1 +1,8 @@
+.sidenav {
+  @extend .list-inline;
 
+  ul {
+    @extend .list-inline;
+    @extend .ms-3;
+  }
+}

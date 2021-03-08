@@ -25,11 +25,11 @@ An useful example is to use it as AND filters when combined with where:
 
 AND filter in where query
 
-```gotemplate
+{{< highlight go "linenos=table" >}}
 {{ $pages := where .Site.RegularPages "Type" "not in" (slice "page" "about") }}
 {{ $pages := $pages | union (where .Site.RegularPages "Params.pinned" true) }}
-{{ $pages := $pages | intersect (where .Site.RegularPages "Params.images" "!=" nil) }}
-```
+{{ $pages := $pages | intersect (where .Site.RegularPages "Params.images" "!=" nil) }} 
+{{< /highlight >}}
 
 The above fetches regular pages not of page or about type unless they are pinned. And finally, we exclude all pages with no images set in Page params.
 

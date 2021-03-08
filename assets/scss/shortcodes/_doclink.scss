@@ -4,11 +4,13 @@
   @extend .border-dark;
   @extend .bg-light;
   @extend .bg-gradient;
-  @extend .p-3;
+  @extend .py-2;
+  @extend .px-3;
   @extend .text-end;
   @extend .mb-3;
 
   a {
+
     img {
       height: 1rem;
       @extend .align-text-top;
@@ -17,6 +19,10 @@
     svg {
       @extend .ms-1;
       @extend .align-text-bottom;
+    }
+
+    code {
+      font-size: 1rem;
     }
   }
 }
