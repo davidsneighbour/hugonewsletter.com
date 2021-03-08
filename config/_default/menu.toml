@@ -9,10 +9,10 @@
 #name = "Changelog"
 #url = "changelog"
 #weight = 1
-#[[footer]]
-#name = "Contact"
-#url = "contact"
-#weight = 2
+[[footer]]
+name = "Contact"
+url = "/contact"
+weight = 2
 #[[footer]]
 #name = "FAQ"
 #url = "faq"

@@ -1,4 +1,85 @@
-footer .navbar-brand img {
-  width: auto;
-  height: 64px;
+#site-footer {
+
+  padding-bottom: 10rem;
+  background-color: $primary;
+
+  a {
+    color: $gray-100;
+  }
+
+  footer {
+    @extend .container-lg;
+
+    .is--footer {
+      @extend .row;
+      @extend .align-items-center;
+      @extend .border-bottom;
+      @extend .border-danger;
+      @extend .py-5;
+
+      aside {
+        @extend .col;
+        @extend .col-md-4;
+
+        &:nth-child(1) {
+          @extend .text-start;
+        }
+
+        &:nth-child(2) {
+          @extend .text-center;
+          @extend .mb-4;
+          @extend .mb-lg-0;
+        }
+
+        &:nth-child(3) {
+          @extend .text-end;
+        }
+
+        ul {
+          @extend .list-inline;
+
+          li {
+            @extend .list-inline-item;
+          }
+        }
+
+      }
+
+      .social-icons {
+
+        @extend .text-center;
+        @extend .text-lg-end;
+
+        margin-bottom: 0;
+
+        a {
+          @extend .d-block;
+          line-height: 42px;
+          width: 42px;
+          height: 42px;
+          @extend .text-center;
+          color: $white;
+          border-radius: 6px;
+          background: $primary;
+        }
+      }
+
+    }
+
+    .is--copyright {
+      @extend .small;
+      @extend .py-4;
+      @extend .text-center;
+      @extend .text-light;
+
+      img {
+        @extend .d-block;
+        max-width: 200px;
+        @extend .my-4;
+        @extend .mx-auto;
+        @extend .img-fluid;
+      }
+    }
+
+  }
 }
