@@ -1,7 +1,0 @@
-{{ $sass         := resources.Get "scss/theme.scss" }}
-{{ $sassIncludes := (slice "node_modules/") }}
-{{ $cssTarget    := "theme.css" }}
-{{ $cssOpts      := (dict "targetPath" $cssTarget "enableSourceMap" true "includePaths" $sassIncludes "outputStyle" "compressed") }}
-
-{{ $css := $sass | toCSS $cssOpts | resources.PostCSS | fingerprint }}
-<link rel="stylesheet" href="{{ $css.Permalink | absURL }}" integrity="{{ $css.Data.Integrity | html }}">
