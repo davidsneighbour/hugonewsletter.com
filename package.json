@@ -1,7 +1,7 @@
 {
   "name": "hugonewsletter.com",
   "description": "Repository for the (unofficial) Hugo Newsletter.",
-  "version": "3.0.13",
+  "version": "3.0.14",
   "author": "Patrick Kollitsch <patrick@hugonewsletter.com>",
   "bugs": {
     "url": "https://github.com/dnb-hugo/hugonewsletter.com/issues"
