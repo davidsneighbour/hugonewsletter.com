@@ -2,50 +2,17 @@
 <html lang="{{ with site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
 {{- partial "head.html" . -}}
 <body>
-	{{- partial "header.html" . -}}
-
-  <section id="content">
-    <main class="row">
-      <aside id="sidebar">
-
-        {{ $notebook := where site.RegularPages "Section" "notebook" }}
-        {{ with $notebook }}
-        <h3>Notebook</h3>
-        <ul>
-          {{ range . }}
-            <li>
-              <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-            </li>
-          {{ end }}
-        </ul>
-        {{ end }}
-
-        {{ $newsletter := where site.RegularPages "Section" "newsletter" }}
-        {{ with $newsletter }}
-        <h3>Newsletter</h3>
-        <ul>
-          {{ range $newsletter }}
-            <li>
-              <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
-            </li>
-          {{ end }}
-        </ul>
-        {{ end }}
-
-
-      </aside>
-      <article>
-
-        {{- block "main" . }}{{- end }}
-
-      </article>
-    </main>
-  </section>
-
-
-
-
-
-	{{- partialCached "footer.html" . -}}
+{{- partial "header.html" . -}}
+<section id="content">
+  <main class="row">
+    <aside id="sidebar">
+      {{ partial "sidebar" . }}
+    </aside>
+    <article>
+      {{- block "main" . }}{{- end }}
+    </article>
+  </main>
+</section>
+{{- partialCached "footer.html" . -}}
 </body>
 </html>

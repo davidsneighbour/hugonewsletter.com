@@ -1,0 +1,11 @@
+{{ $notebook := where site.RegularPages "Section" "notebook" }}
+{{ with $notebook }}
+  <h3>Notebook</h3>
+  <ul>
+    {{ range . }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}

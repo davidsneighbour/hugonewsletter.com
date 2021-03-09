@@ -1,0 +1,11 @@
+{{ $newsletter := where site.RegularPages "Section" "newsletter" }}
+{{ with $newsletter }}
+  <h3>Newsletter</h3>
+  <ul>
+    {{ range $newsletter }}
+      <li>
+        <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
