@@ -6,7 +6,7 @@
     in the latest Hugo versions.
   </p>
   <p>
-    <a href="{{ .Permalink }}">{{ .Title }}</a> was last updated on {{ .Lastmod.Format "January 2, 2006" }}.
+    <a href="{{ .Permalink }}">{{ .Title | plainify }}</a> was last updated on {{ .Lastmod.Format "January 2, 2006" }}.
   </p>
   <p>
     <a href="https://github.com/dnb-hugo/hugonewsletter.com/edit/main/content/{{.File.Path}}">

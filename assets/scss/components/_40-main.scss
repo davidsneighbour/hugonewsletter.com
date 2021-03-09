@@ -30,6 +30,7 @@
 
     article {
 
+      @extend .ps-5;
       @extend .col-lg-9;
       @extend .col-md-8;
       @extend .pb-5;
