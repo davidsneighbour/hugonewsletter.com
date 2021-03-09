@@ -28,4 +28,9 @@ p {
   hyphenate-limit-last: always;
   hyphenate-limit-zone: 8%;
 
+  // remove bottom margin from last paragraphs in an element
+  &:last-child {
+    @extend .mb-0;
+  }
+
 }

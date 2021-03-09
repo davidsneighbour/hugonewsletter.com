@@ -1,0 +1,23 @@
+#sidebar {
+  @extend .pe-0;
+  @extend .pb-5;
+  @extend .col-md-4;
+  @extend .d-none;
+  @extend .d-md-block;
+  @extend .border-end;
+  @extend .border-light;
+  @extend .border-5;
+  @extend .pt-4;
+
+  ul {
+
+    @extend .list-inline;
+
+    ul {
+      @extend .list-inline;
+      @extend .ms-3;
+    }
+
+  }
+
+}

@@ -1,28 +1,4 @@
 {{ define "main" }}
-
-<section class="container-lg">
-        <div class="row">
-            <div class="col-lg-3 col-md-4 d-none d-md-block">
-                <ul class="sidenav pt-4 pr-4 border-end border-default">
-                    {{ $currentNode := . }}
-                    {{range .Site.Home.Sections.ByWeight}}
-                    <!-- not render any single page, like contact page. -->
-                    {{ $numberOfMainPages := len .Pages }}
-                    {{ if eq $numberOfMainPages 0 }}
-                    {{ else }}
-                    <!-- /not render any single page, like contact page. -->
-                    {{ template "section-tree-nav" dict "sect" . "currentnode" $currentNode}}
-                    {{ end }}
-                    {{ end }}
-                </ul>
-            </div>
-            <div class="col-md-8">
-                <div class="px-lg-2 px-1 pt-5">
-                    <h2 class="mb-4 font-weight-medium">{{ .Title | safeHTML }}</h2>
-                    {{ partial "snippets/newsletter.html" . }}
-                </div>
-            </div>
-        </div>
-</section>
-
+    <h2 class="mb-4 font-weight-medium">{{ .Title | safeHTML }}</h2>
+    {{ partial "snippets/newsletter.html" . }}
 {{ end }}

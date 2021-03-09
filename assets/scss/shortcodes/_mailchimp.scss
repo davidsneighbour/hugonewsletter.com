@@ -1,0 +1,65 @@
+#mailchimp {
+
+  @extend .pt-0;
+  @extend .mt-0;
+  @extend .card;
+  @extend .mb-3;
+  @extend .w-100;
+
+  header {
+    @extend .mt-0;
+    @extend .h5;
+    @extend .card-header;
+  }
+
+  form {
+    @extend .mb-0;
+    @extend .card-body;
+
+    div[aria-hidden='true'] {
+      @extend .d-none;
+    }
+
+    fieldset {
+      @extend .row;
+      @extend .mb-3;
+      @extend .g-2;
+
+      div {
+        @extend .col;
+
+        input {
+          @extend .form-control;
+        }
+      }
+
+    }
+
+    .alert {
+
+      @extend .alert-info;
+      @extend .mb-3;
+
+      #gdpr_13209 {
+        @extend .form-check;
+
+        input {
+          @extend .form-check-input;
+        }
+
+        label {
+          @extend .form-check-label;
+        }
+      }
+
+    }
+
+    input[type=submit] {
+      @extend .btn;
+      @extend .btn-primary;
+      @extend .btn-lg;
+      @extend .w-100;
+    }
+  }
+
+}

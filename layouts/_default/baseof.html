@@ -3,7 +3,44 @@
 {{- partial "head.html" . -}}
 <body>
 	{{- partial "header.html" . -}}
-	{{- block "main" . }}{{- end }}
+
+  <section id="content">
+    <main class="row">
+      <aside id="sidebar">
+
+        <h3>Notebook</h3>
+        {{ $notebook := where site.RegularPages "Section" "notebook" }}
+        <ul>
+          {{ range $notebook }}
+            <li>
+              <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+            </li>
+          {{ end }}
+        </ul>
+        <h3>Newsletter</h3>
+        {{ $newsletter := where site.RegularPages "Section" "newsletter" }}
+        <ul>
+          {{ range $newsletter }}
+            <li>
+              <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+            </li>
+          {{ end }}
+        </ul>
+
+
+      </aside>
+      <article>
+
+        {{- block "main" . }}{{- end }}
+
+      </article>
+    </main>
+  </section>
+
+
+
+
+
 	{{- partialCached "footer.html" . -}}
 </body>
 </html>

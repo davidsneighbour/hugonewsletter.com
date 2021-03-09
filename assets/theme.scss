@@ -54,7 +54,10 @@
 @import 'scss/components/60-footer';
 @import 'scss/sections/content';
 @import 'scss/sections/newsletter';
+
+// Shortcodes
 @import 'scss/shortcodes/doclink';
+@import 'scss/shortcodes/mailchimp';
 
 // Plugins
 @import 'scss/plugins/highlight';

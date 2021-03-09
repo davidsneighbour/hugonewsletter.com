@@ -1,9 +1,6 @@
 {{ define "main" }}
 
-<section class="container-lg">
-    <div class="row justify-content-center">
-      <div class="col-lg-8">
-        <div class="p-5 shadow content">
+
           <h2 class="section-title">{{ .Title | safeHTML }}</h2>
           <form method="POST" action="{{ .Site.Params.contact_form_action }}">
             <div class="form-row">
@@ -22,9 +19,4 @@
             </div>
             <button type="submit" class="btn btn-primary">{{ i18n "send" }}</button>
           </form>
-        </div>
-      </div>
-    </div>
-</section>
-
 {{ end }}
