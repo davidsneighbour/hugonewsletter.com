@@ -8,17 +8,21 @@
     <main class="row">
       <aside id="sidebar">
 
-        <h3>Notebook</h3>
         {{ $notebook := where site.RegularPages "Section" "notebook" }}
+        {{ with $notebook }}
+        <h3>Notebook</h3>
         <ul>
-          {{ range $notebook }}
+          {{ range . }}
             <li>
               <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
             </li>
           {{ end }}
         </ul>
-        <h3>Newsletter</h3>
+        {{ end }}
+
         {{ $newsletter := where site.RegularPages "Section" "newsletter" }}
+        {{ with $newsletter }}
+        <h3>Newsletter</h3>
         <ul>
           {{ range $newsletter }}
             <li>
@@ -26,6 +30,7 @@
             </li>
           {{ end }}
         </ul>
+        {{ end }}
 
 
       </aside>
