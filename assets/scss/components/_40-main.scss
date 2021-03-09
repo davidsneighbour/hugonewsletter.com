@@ -2,18 +2,20 @@
   @extend .container-lg;
 
   main {
+    @extend .mb-0;
     aside {
       @extend .pe-0;
+      @extend .pb-5;
       @extend .col-lg-3;
       @extend .col-md-4;
       @extend .d-none;
       @extend .d-md-block;
       @extend .border-end;
-      @extend .border-primary;
+      @extend .border-light;
+      @extend .border-5;
+      @extend .pt-4;
 
       ul {
-
-        @extend .pt-4;
 
         @extend .list-inline;
 
@@ -30,6 +32,7 @@
 
       @extend .col-lg-9;
       @extend .col-md-8;
+      @extend .pb-5;
     }
   }
 
