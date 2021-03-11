@@ -1,0 +1,23 @@
+[REDIR]
+mediatype = "text/netlify"
+baseName = "_redirects"
+isPlainText = true
+notAlternative = true
+
+[HEADERS]
+mediatype = "text/netlify"
+baseName = "_headers"
+isPlainText = true
+notAlternative = true
+
+[OpenSearch]
+mediatype = "application/opensearchdescription+xml"
+baseName = "opensearch"
+isPlainText = true
+notAlternative = true
+
+[Algolia]
+baseName = "algolia"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true

@@ -1,0 +1,8 @@
+title = "HugoNewsletter.com"
+description = "The Hugo Newsletter (unofficial)"
+query_url = "search/?query={searchTerms}"
+search_form = "search/"
+output_encoding = "UTF-8"
+input_encoding = "UTF-8"
+enable_autoupdate = true
+hookLink = "https://github.com/dnb-hugo/components/wiki/DNB-Hugo-Components---OpenSearch"

@@ -9,3 +9,5 @@ delimiter = "."
 ["text/webmanifest"]
 suffixes = ["webmanifest"]
 delimiter = "."
+
+
