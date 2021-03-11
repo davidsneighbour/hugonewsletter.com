@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+SCRIPTPATH="$( cd "$(dirname "$0")" >/dev/null 2>&1 || exit ; pwd -P )"
 
 if test -f "$SCRIPTPATH"/replacements; then
   while read -ra __; do
@@ -14,9 +14,10 @@ hugo mod tidy
 git add go.mod --force
 git add go.sum --force
 
-#rm -rf public
-#hugo
-#git add public/ -f
+### If we can't built automatically on netlify then do it here and commit public
+# rm -rf public
+# hugo
+# git add public/ -f
 
 if test -f "$SCRIPTPATH"/replacements; then
   while read -ra __; do
