@@ -1,0 +1,38 @@
+.is--form-contact {
+
+  @include clearfix;
+
+  fieldset {
+    @extend .g-3;
+
+    .col {
+      @extend .col-md-6;
+
+      &:last-of-type {
+        @extend .col-md-12;
+        @extend .col;
+        @extend .mb-3;
+      }
+
+      label {
+        @extend .form-label;
+      }
+
+      input, textarea {
+        @extend .form-control;
+      }
+
+      textarea {
+        min-height: 200px;
+      }
+    }
+  }
+
+  button[type='submit'] {
+    @extend .float-end;
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .btn-lg;
+  }
+
+}
