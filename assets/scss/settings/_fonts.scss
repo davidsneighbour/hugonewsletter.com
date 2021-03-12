@@ -1,1 +1,74 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap');
+@font-face {
+  font-family: 'betm';
+  src: url('/webfonts/betm/400/Betm-SemiLight.eot');
+  src: url('/webfonts/betm/400/Betm-SemiLight.eot?#iefix') format('embedded-opentype'),
+  url('/webfonts/betm/400/Betm-SemiLight.woff') format('woff'),
+  url('/webfonts/betm/400/Betm-SemiLight.ttf') format('truetype'),
+  url('/webfonts/betm/400/Betm-SemiLight.svg#/webfonts/betm/400/Betm-SemiLight') format('svg');
+  font-style: normal;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'betm';
+  src: url('/webfonts/betm/400/Betm-SemiLightItalic.eot');
+  src: url('/webfonts/betm/400/Betm-SemiLightItalic.eot?#iefix') format('embedded-opentype'),
+  url('/webfonts/betm/400/Betm-SemiLightItalic.woff') format('woff'),
+  url('/webfonts/betm/400/Betm-SemiLightItalic.ttf') format('truetype'),
+  url('/webfonts/betm/400/Betm-SemiLightItalic.svg#/webfonts/betm/400/Betm-SemiLightItalic') format('svg');
+  font-style: italic;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'betm';
+  src: url('/webfonts/betm/700/Betm-SemiBold.eot');
+  src: url('/webfonts/betm/700/Betm-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('/webfonts/betm/700/Betm-SemiBold.woff') format('woff'),
+  url('/webfonts/betm/700/Betm-SemiBold.ttf') format('truetype'),
+  url('/webfonts/betm/700/Betm-SemiBold.svg#/webfonts/betm/700/Betm-SemiBold') format('svg');
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'betm';
+  src: url('/webfonts/betm/700/Betm-SemiBoldItalic.eot');
+  src: url('/webfonts/betm/700/Betm-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('/webfonts/betm/700/Betm-SemiBoldItalic.woff') format('woff'),
+  url('/webfonts/betm/700/Betm-SemiBoldItalic.ttf') format('truetype'),
+  url('/webfonts/betm/700/Betm-SemiBoldItalic.svg#/webfonts/betm/700/Betm-SemiBoldItalic') format('svg');
+  font-style: italic;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'betm';
+  src: url('/webfonts/betm/900/Betm-ExtraBlack.eot');
+  src: url('/webfonts/betm/900/Betm-ExtraBlack.eot?#iefix') format('embedded-opentype'),
+  url('/webfonts/betm/900/Betm-ExtraBlack.woff') format('woff'),
+  url('/webfonts/betm/900/Betm-ExtraBlack.ttf') format('truetype'),
+  url('/webfonts/betm/900/Betm-ExtraBlack.svg#/webfonts/betm/900/Betm-ExtraBlack') format('svg');
+  font-style: normal;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'betm';
+  src: url('/webfonts/betm/900/Betm-ExtraBlackItalic.eot');
+  src: url('/webfonts/betm/900/Betm-ExtraBlackItalic.eot?#iefix') format('embedded-opentype'),
+  url('/webfonts/betm/900/Betm-ExtraBlackItalic.woff') format('woff'),
+  url('/webfonts/betm/900/Betm-ExtraBlackItalic.ttf') format('truetype'),
+  url('/webfonts/betm/900/Betm-ExtraBlackItalic.svg#/webfonts/betm/900/Betm-ExtraBlackItalic') format('svg');
+  font-style: italic;
+  font-weight: 900;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
+

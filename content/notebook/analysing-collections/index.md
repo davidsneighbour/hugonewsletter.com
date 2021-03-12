@@ -25,7 +25,7 @@ An useful example is to use it as AND filters when combined with where:
 
 AND filter in where query
 
-{{< highlight go "linenos=table" >}}
+{{< highlight go-html-template >}}
 {{ $pages := where .Site.RegularPages "Type" "not in" (slice "page" "about") }}
 {{ $pages := $pages | union (where .Site.RegularPages "Params.pinned" true) }}
 {{ $pages := $pages | intersect (where .Site.RegularPages "Params.images" "!=" nil) }} 

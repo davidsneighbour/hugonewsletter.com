@@ -1,0 +1,12 @@
+/* Webfont: Betm-ExtraBlackItalic */@font-face {
+    font-family: 'BetmExtBlk';
+    src: url('Betm-ExtraBlackItalic.eot'); /* IE9 Compat Modes */
+    src: url('Betm-ExtraBlackItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Betm-ExtraBlackItalic.woff') format('woff'), /* Modern Browsers */
+         url('Betm-ExtraBlackItalic.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Betm-ExtraBlackItalic.svg#Betm-ExtraBlackItalic') format('svg'); /* Legacy iOS */
+    font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

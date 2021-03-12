@@ -1,0 +1,12 @@
+[highlight]
+anchorLineNos = false
+codeFences = true
+guessSyntax = true
+hl_Lines = ""
+lineAnchors = ""
+lineNoStart = 1
+lineNos = false
+lineNumbersInTable = false
+noClasses = false
+style = "monokailight"
+tabWidth = 4
