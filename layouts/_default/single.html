@@ -1,3 +1,8 @@
 {{ define "main" }}
-  {{ partial "default.html" . }}
+  <header>
+    <h1>{{ .Title | safeHTML }}</h1>
+    <p>Last Modified: {{ .Lastmod.Format "January 2, 2006" }} <a href="#is--github-info">{{ partialCached "bsicon" "info-circle" "info-circle" }}</a></p>
+  </header>
+  <div class="content">{{.Content}}</div>
+  {{ partial "snippets/living-documentation" . }}
 {{ end }}
