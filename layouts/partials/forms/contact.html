@@ -1,6 +1,6 @@
 <form method="POST" action="{{ site.Params.contact_form_action | safeHTMLAttr }}" class="is--form-contact">
-  <input type="text" name="_subject" placeholder="[hugonewsletter] Enquiry">
-  <input type="text" name="_gotcha" style="display:none" />
+  <input type="hidden" name="_subject" value="[hugonewsletter] Enquiry">
+  <input type="text" name="_gotcha" class="d-none" />
   <fieldset class="row">
     <div class="col">
       <label for="name">Your Name</label>
