@@ -1,3 +1,6 @@
+[general]
+description = "The (unofficial) Hugo Newsletter is a curated list of information about Hugo releases, important Documentation updates, new & updated themes, interesting discussions from the Hugo forums, and blog posts on Hugo from around the web. A new issue is released on the first Monday of every month."
+
 [contact]
 formlink = "https://formspree.io/f/xbjpaonv"
 subject = "[hugonewsletter] Enquiry"

@@ -3,7 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ .Title | plainify }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Data.dnb.hugonewsletter.config.general.description }}{{ . }}{{ end }}{{ end }}">
   {{ with site.Author.name }}<meta name="author" content="{{ . }}">{{ end }}
   {{- with partialCached "func/getStylesheet.html" . $.Lang -}}
     <link rel="stylesheet"
