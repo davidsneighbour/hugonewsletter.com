@@ -1,5 +1,5 @@
-<form method="POST" action="{{ site.Params.contact_form_action | safeHTMLAttr }}" class="is--form-contact">
-  <input type="hidden" name="_subject" value="[hugonewsletter] Enquiry">
+<form method="POST" action="{{ site.Data.dnb.hugonewsletter.config.contact.formlink }}" class="is--form-contact">
+  <input type="hidden" name="_subject" value="{{ site.Data.dnb.hugonewsletter.config.contact.subject }}">
   <input type="text" name="_gotcha" class="d-none" />
   <fieldset class="row">
     <div class="col">
