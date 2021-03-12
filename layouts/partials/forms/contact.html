@@ -1,16 +1,18 @@
 <form method="POST" action="{{ site.Params.contact_form_action | safeHTMLAttr }}" class="is--form-contact">
+  <input type="text" name="_subject" placeholder="[hugonewsletter] Enquiry">
+  <input type="text" name="_gotcha" style="display:none" />
   <fieldset class="row">
     <div class="col">
-      <label for="fname">Your Name</label>
-      <input type="text" id="fname" name="fname" placeholder="Your Name" required>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="Name" placeholder="Your Name" required>
     </div>
     <div class="col">
       <label for="email">Your Email Address</label>
-      <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+      <input type="email" id="email" name="Email" placeholder="Your Email Address" required>
     </div>
     <div class="col">
       <label for="message">Your Message</label>
-      <textarea name="message" id="message" placeholder="Your Message ..." required></textarea>
+      <textarea name="message" id="Message" placeholder="Your Message ..." required></textarea>
     </div>
   </fieldset>
   <button type="submit">Send Message</button>
