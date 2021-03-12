@@ -27,6 +27,9 @@
 
       div {
         @extend .col;
+        label {
+          @extend .form-label;
+        }
 
         input {
           @extend .form-control;
