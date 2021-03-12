@@ -1,4 +1,4 @@
-<form method="POST" action="{{ .Site.Params.contact_form_action }}" class="is--form-contact">
+<form method="POST" action="{{ site.Params.contact_form_action | safeHTMLAttr }}" class="is--form-contact">
   <fieldset class="row">
     <div class="col">
       <label for="fname">Your Name</label>

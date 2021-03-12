@@ -1,9 +1,7 @@
-[params]
 logo = "images/logo.png"
 description = "This is meta description"
 contact_form_action = "https://formspree.io/f/xbjpaonv" # https://formspree.io
 google_analitycs_id = "UA-146893148-1"
-
 
 [[social]]
 title = "twitter"
