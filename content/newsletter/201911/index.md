@@ -3,7 +3,6 @@ date: 2019-11-07
 title: Today is the second Monday in November and this is the second issue of the (inofficial) Hugo Newsletter.
 linkTitle: November 2019
 end: That's all for this month... have a great first Monday in November and rest of the month!<br/>Patrick
-url: /2019/11/
 catimagetitle: Photo by Sereja Ris on Unsplash
 catimagelink: https://unsplash.com/photos/g3B53PbBfwU
 catimageintro: And here is a cat picture. This cat is excited to start into the new work week on this auspicious Monday morning. Because it's Monday. The _*(unofficial)*_ Hugo Newsletter is published as always on the first Monday each month and this issue just got published... so it must be Monday... 

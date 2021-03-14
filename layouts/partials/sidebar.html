@@ -1,2 +1,14 @@
-{{ partial "sidebar/newsletter" . }}
-{{ partial "sidebar/notebook" . }}
+{{ range site.Params.mainSections }}
+  {{ $section := site.GetPage "section" . }}
+  {{ $posts := where site.RegularPages "Section" . }}
+  {{ with $posts }}
+    <h3><a href="{{ $section.Permalink }}" class="text-dark">{{ $section.Title }}</a></h3>
+    <ul>
+      {{ range . }}
+        <li class=" text-truncate" title="{{ .LinkTitle }}">
+          <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+{{ end }}
