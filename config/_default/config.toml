@@ -13,7 +13,7 @@ googleAnalytics = "UA-146893148-1"
 languageCode = "en=gb"
 languageName = "English"
 logFile = "hugo.log"
-paginate = 5                              # default 5 items per page
+paginate = 10                              # default 5 items per page
 #paginatePath = "seite"
 pluralizelisttitles = false
 relativeURLs = true                       # makes all relative urls absolute to root... yeah, don't ask. we won't tell...

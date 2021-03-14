@@ -1,18 +1,23 @@
-
 {{ define "main" }}
-
-      <header>
-        <h1>{{.Title}}</h1>
-      </header>
-      <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-      {{.Content}}
-
-    <ul>
-      <!-- Ranges through content/posts/*.md -->
-      {{ range .Pages }}
-        <li>
-          <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
-        </li>
-      {{ end }}
-    </ul>
+  <header>
+    <h1>{{.Title}}</h1>
+  </header>
+  {{.Content}}
+  {{ range .Pages }}
+    <div class="card border-secondary mb-3">
+      <div class="card-header bg-transparent d-flex justify-content-between">
+        <h5 class="mb-0">
+          <a href="{{.Permalink}}">{{ .Title }}</a>
+        </h5>
+        <span class="badge bg-light text-dark">{{.Date.Format "2006-01-02"}}</span>
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{ .Description }}</p>
+      </div>
+      <div class="card-footer bg-transparent  text-end">
+        <a href="{{.Permalink}}" class="btn btn-outline-primary btn-sm">Read on...</a>
+      </div>
+    </div>
+  {{ end }}
+  {{ partial "snippets/living-documentation" . }}
 {{ end }}

@@ -1,9 +1,9 @@
 {{ $notebook := where site.RegularPages "Section" "notebook" }}
 {{ with $notebook }}
-  <h3>Notebook</h3>
+  <h3><a href="/notebook/">The Notebook</a></h3>
   <ul>
     {{ range . }}
-      <li>
+      <li class=" text-truncate" title="{{ .LinkTitle }}">
         <a href="{{ .Permalink }}">{{ .LinkTitle }}</a>
       </li>
     {{ end }}

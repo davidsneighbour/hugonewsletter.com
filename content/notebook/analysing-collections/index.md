@@ -44,7 +44,7 @@ Syntax
 union SET1 SET2
 Given two arrays (or slices) A and B, this function will return a new array that contains the elements or objects that belong to either A or to B or to both. The elements supported are strings, integers, and floats (only float64).
 
-```gotemplate
+{{< highlight go-html-template >}}
 {{ union (slice 1 2 3) (slice 3 4 5) }}
 <!-- returns [1 2 3 4 5] -->
 
@@ -56,14 +56,17 @@ Given two arrays (or slices) A and B, this function will return a new array that
 
 {{ union nil nil }}
 <!-- returns an error because both arrays/slices have to be of the same type -->
-```
+{{< /highlight >}}
 
 OR filter in where query
 This is also very useful to use as OR filters when combined with where:
 
+{{< highlight go-html-template >}}
 {{ $pages := where .Site.RegularPages "Type" "not in" (slice "page" "about") }}
 {{ $pages := $pages | union (where .Site.RegularPages "Params.pinned" true) }}
 {{ $pages := $pages | intersect (where .Site.RegularPages "Params.images" "!=" nil) }}
+{{< /highlight >}}
+
 The above fetches regular pages not of page or about type unless they are pinned. And finally, we exclude all pages with no images set in Page params.
 
 {{< doclink url="https://gohugo.io/functions/union/" function="union" >}}
@@ -92,12 +95,12 @@ Syntax
 COLLECTION | complement COLLECTION [COLLECTION]...
 Example:
 
-```gotemplate
+{{< highlight go-html-template >}}
 {{ $pages := .Site.RegularPages | first 50 }}
 {{ $news := where $pages "Type" "news" | first 5 }}
 {{ $blog := where $pages "Type" "blog" | first 5 }}
-{{ $other := $pages | complement $news $blog | first 10 }}
-```
+{{ $other := $pages | complement $news $blog | first 10 }} 
+{{< /highlight >}}
 
 The above is an imaginary use case for the home page where you want to display different page listings in sections/boxes on different places on the page: 5 from news, 5 from the blog and then 10 of the pages not shown in the other listings, to complement them.
 

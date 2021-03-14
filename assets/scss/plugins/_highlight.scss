@@ -1,7 +1,12 @@
 pre {
   @extend .m-0;
-  @extend .p-0;
+  @extend .px-2;
+  @extend .py-3;
   font-size: 0.9rem;
+}
+
+.highlight {
+  margin-bottom: $spacer;
 }
 
 .chroma {
