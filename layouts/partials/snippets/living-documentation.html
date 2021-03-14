@@ -9,7 +9,7 @@
     <a href="{{ .Permalink }}">{{ .Title | plainify }}</a> was last updated on {{ .Lastmod.Format "January 2, 2006" }}.
   </p>
   <p>
-    <a href="https://github.com/dnb-hugo/hugonewsletter.com/edit/main/content/{{.File.Path}}">
+    <a href="https://github.com/dnb-hugo/hugonewsletter.com/edit/main/content/{{ .File.Path }}">
       {{ partialCached "bsicon" "github" "github" }}&nbsp;
       Help to improve this page on Github
     </a>
